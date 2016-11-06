@@ -49,4 +49,4 @@
 			</header>
 			<!-- /header -->
 
-			<?php echo 'testing xxx'; ?>
+			<?php echo 'testing yyy'; ?>
