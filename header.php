@@ -48,3 +48,5 @@
 
 			</header>
 			<!-- /header -->
+
+			<?php echo 'testing xxx'; ?>
