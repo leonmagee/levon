@@ -50,3 +50,5 @@
 			<!-- /header -->
 
 			<?php echo 'testing yyy'; ?>
+
+			<?php phpinfo(); ?>
