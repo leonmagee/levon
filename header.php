@@ -51,4 +51,4 @@
 
 			<?php echo 'testing yyy'; ?>
 
-			<?php phpinfo(); ?>
+			<?php //phpinfo(); ?>
