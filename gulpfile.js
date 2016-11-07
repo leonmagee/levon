@@ -36,7 +36,7 @@ gulp.task('browser-sync', function() {
     browserSync.init({
         proxy: "www.levon.dev", // this proxys my dev site to localhost:3000
         open: false,
-        port: 777
+        port: 9999
     });
 });
 
