@@ -35,7 +35,7 @@
 					<!-- logo -->
 					<div class="site-title">
 						<a href="<?php echo home_url(); ?>">
-							<?php echo bloginfo('name'); ?>
+							<?php echo bloginfo('name'); ?>xxx
 						</a>
 					</div>
 					<!-- /logo -->
