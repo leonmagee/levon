@@ -1,10 +1,4 @@
 <?php
-/*
- *  Author: Todd Motto | @toddmotto
- *  URL: html5blank.com | @html5blank
- *  Custom functions, support, custom post types and more.
- */
-
 /*------------------------------------*\
 	External Modules/Files
 \*------------------------------------*/
@@ -26,7 +20,13 @@ function levon_register_post_types() {
 		'awards'
 	);
 
-	//mm_create_wp_cpt::create_post_type( 'testimonials', 'Testimonial', 'Testimonials', 'testimonials', 'format-quote' );
+	levon_create_cpt::create_post_type(
+		'technology',
+		'Technology',
+		'Technologies',
+		'technologies',
+		'welcome-learn-more'
+	);
 }
 
 add_action( 'init', 'levon_register_post_types' );
@@ -108,13 +108,13 @@ function html5blank_nav() {
 function html5blank_header_scripts() {
 	if ( $GLOBALS['pagenow'] != 'wp-login.php' && ! is_admin() ) {
 
-		wp_register_script( 'conditionizr', get_template_directory_uri() . '/js/lib/conditionizr-4.3.0.min.js', array(), '4.3.0' ); // Conditionizr
+		wp_register_script( 'conditionizr', get_template_directory_uri() . '/assets/js/lib/conditionizr-4.3.0.min.js', array(), '4.3.0' ); // Conditionizr
 		wp_enqueue_script( 'conditionizr' ); // Enqueue it!
 
-		wp_register_script( 'modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1' ); // Modernizr
+		wp_register_script( 'modernizr', get_template_directory_uri() . '/assets/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1' ); // Modernizr
 		wp_enqueue_script( 'modernizr' ); // Enqueue it!
 
-		wp_register_script( 'html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ), '1.0.0' ); // Custom scripts
+		wp_register_script( 'html5blankscripts', get_template_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ), '1.0.0' ); // Custom scripts
 		wp_enqueue_script( 'html5blankscripts' ); // Enqueue it!
 	}
 }
@@ -122,7 +122,7 @@ function html5blank_header_scripts() {
 // Load HTML5 Blank conditional scripts
 function html5blank_conditional_scripts() {
 	if ( is_page( 'pagenamehere' ) ) {
-		wp_register_script( 'scriptname', get_template_directory_uri() . '/js/scriptname.js', array( 'jquery' ), '1.0.0' ); // Conditional script(s)
+		wp_register_script( 'scriptname', get_template_directory_uri() . '/assets/js/scriptname.js', array( 'jquery' ), '1.0.0' ); // Conditional script(s)
 		wp_enqueue_script( 'scriptname' ); // Enqueue it!
 	}
 }
@@ -137,6 +137,12 @@ function html5blank_styles() {
 
 	wp_register_style( 'main-styles', get_template_directory_uri() . '/assets/css/main.min.css' );
 	wp_enqueue_style( 'main-styles' ); // Enqueue it!
+
+	wp_register_style( 'flat-icons', get_template_directory_uri() . '/assets/icons/flat-icon/font/flaticon.css' );
+	wp_enqueue_style( 'flat-icons' ); // Enqueue it!
+
+	wp_register_style( 'fontello', get_template_directory_uri() . '/assets/icons/fontello/css/fontello.css' );
+	wp_enqueue_style( 'fontello' ); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation

@@ -1,0 +1,10 @@
+@mixin mont_regular() {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+@mixin mont_bold() {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+

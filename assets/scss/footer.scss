@@ -1,5 +1,13 @@
 footer.footer {
   background: #222;
   color: #FFF;
+  @include mont_regular;
+  text-transform: uppercase;
   text-align: center;
+  margin-top: auto;
+  padding: 20px 0;
+
+  div.copyright {
+    opacity: 0.8;
+  }
 }

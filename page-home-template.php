@@ -6,28 +6,23 @@ get_header(); ?>
 <main role="main">
 	<!-- section -->
 	<section>
+		<?php
+		/**
+		 * @todo pull this all from Theme Options
+		 */
+		?>
+		<div class="homepage-large-text">
+			<h1>Mobile & Web Development</h1>
+			<p>Mobile Apps built with React Native for IOS and Android.</p>
+			<p>WordPress Themes and Plugins.</p>
+		</div>
 
 		<?php
 		/**
-		 * Projects Section
+		 * Products Loop
 		 */
-
-		$args = array( 'post_type' => 'project' );
-
-		$projects_query = new WP_Query( $args );
-
-		while ( $projects_query->have_posts() ) {
-			$projects_query->the_post();
-			$gallery = get_field( 'gallery' );
-			?>
-
-			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-
-			<div class="project-image">
-				<img src="<?php echo $gallery[0]['sizes']['large']; ?>"/>
-			</div>
-
-		<?php } ?>
+		get_template_part( 'lib/projects_loop' );
+		?>
 
 	</section>
 	<!-- /section -->

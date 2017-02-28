@@ -1,0 +1,20 @@
+.homepage-large-text {
+  margin: 10px;
+  text-align: center;
+  @media(min-width: $screen-sm) {
+    max-width: 600px;
+    margin: 10px auto;
+  }
+  h1 {
+    font-size: 5em;
+    line-height: 1.3em;
+    color: #222;
+    margin-bottom: 0;
+  }
+  p {
+
+    @include mont_regular();
+    color: #000;
+    font-size: 1.4em;
+  }
+}

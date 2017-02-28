@@ -1,0 +1,38 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 27/02/2017 18:58
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-javascript:before { content: "\f100"; }
+.flaticon-social:before { content: "\f101"; } /* WordPress */
+.flaticon-git-logo-1:before { content: "\f102"; }
+.flaticon-git-logo:before { content: "\f103"; }
+.flaticon-css-3-logo:before { content: "\f104"; }
+.flaticon-internet:before { content: "\f105"; } /* HTML 5 */
+.flaticon-technology:before { content: "\f106"; } /* PHP */
