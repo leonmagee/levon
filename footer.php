@@ -6,7 +6,7 @@
 
 	<!-- copyright -->
 	<div class="copyright">
-		<?php bloginfo( 'name' ); ?><?php echo date( 'Y' ); ?>
+		<?php bloginfo( 'name' ); ?> <?php echo date( 'Y' ); ?>
 	</div>
 	<!-- /copyright -->
 

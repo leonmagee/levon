@@ -40,7 +40,8 @@
       align-items: center;
       justify-content: center;
       .extra-info {
-        @include mont_regular;
+        //@include mont_regular;
+        @include lato_regular;
         font-size: 1.2em;
         padding: 10px;
         background-color: #FFF;

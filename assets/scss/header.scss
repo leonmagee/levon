@@ -1,51 +1,60 @@
 header.header {
-  height: 70px;
-  background: #222;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  @media(min-width: $screen-sm) {
-    justify-content: flex-start;
-  }
-  .site-title {
-
-    //font-family: 'Montserrat', sans-serif;
-    font-family: 'Cantarell', sans-serif;
-    //font-weight: 700;
-    //font-style: italic;
-    color: red;
-    font-size: 3.5em;
-    text-transform: uppercase;
-
-
+  //@include moulin_bg;
+  @include rebel_bg;
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @media(min-width: $screen-sm) {
-
-      margin-left: 5%;
+      justify-content: space-between;
     }
-
-    a {
-      color: $base-white;
-      display: flex;
-      align-items: center;
-      .logo {
-        margin: 0 3px;
-        color: #FFF !important;
-      }
-      .logo_1 {
-        color: $brand-second;
-      }
-      .logo_2 {
+    .site-title {
+      @include cantarell_bold_italic;
+      font-size: 3.5em;
+      text-transform: uppercase;
+      flex: 1;
+      a {
         color: $base-white;
+        display: flex;
+        align-items: center;
+        .logo {
+          margin: 0 3px;
+          color: #FFF !important;
+        }
+        .logo_1 {
+          color: $brand-second;
+        }
+        .logo_2 {
+          color: $base-white;
+        }
+        .logo_3 {
+          color: $brand-primary;
+          font-size: 1.3em;
+        }
+        .logo_4 {
+          color: $brand-third;
+        }
+        .logo_5 {
+          color: $brand-fourth;
+        }
       }
-      .logo_3 {
-        color: $brand-primary;
-        font-size: 1.3em;
-      }
-      .logo_4 {
-        color: $brand-third;
-      }
-      .logo_5 {
-        color: $brand-fourth;
+    }
+    .nav {
+      ul {
+        display: flex;
+        color: #FFF;
+        font-size: 2em;
+        list-style-type: none;
+        li {
+          margin: 0 15px;
+          a {
+            color: #FFF;
+            @include cantarell_bold_italic;
+            &:hover {
+              color: $brand-primary;
+            }
+          }
+        }
       }
     }
   }

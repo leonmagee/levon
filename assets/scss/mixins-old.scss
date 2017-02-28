@@ -1,0 +1,37 @@
+//@mixin mont_regular() {
+//  font-family: 'Montserrat', sans-serif;
+//  font-weight: 400;
+//}
+//
+//@mixin mont_bold() {
+//  font-family: 'Montserrat', sans-serif;
+//  font-weight: 700;
+//}
+
+@mixin lato_regular() {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+@mixin cantarell_regular() {
+  font-family: 'Cantarell', sans-serif;
+  font-weight: 400;
+}
+
+@mixin cantarell_regular_italic() {
+  font-family: 'Cantarell', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@mixin cantarell_bold() {
+  font-family: 'Cantarell', sans-serif;
+  font-weight: 700;
+}
+
+@mixin cantarell_bold_italic() {
+  font-family: 'Cantarell', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+

@@ -1,10 +1,45 @@
-@mixin mont_regular() {
-  font-family: 'Montserrat', sans-serif;
+/**
+* Regular Font
+**/
+@mixin lato_regular() {
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
-
-@mixin mont_bold() {
-  font-family: 'Montserrat', sans-serif;
+/**
+* Header Fonts
+**/
+@mixin cantarell_bold() {
+  font-family: 'Cantarell', sans-serif;
   font-weight: 700;
 }
+
+@mixin cantarell_bold_italic() {
+  font-family: 'Cantarell', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/**
+* Backgrounds
+**/
+@mixin moulin_bg() {
+  background-color: #222;
+  background-image: url('../img/bgs/moulin_@2X.png');
+  background-size: 20px 20px;
+}
+
+@mixin rebel_bg() {
+  background-color: #222;
+  background-image: url('../img/bgs/rebel_@2X.png');
+  background-size: 320px 360px;
+}
+
+@mixin agsquare_bg() {
+  background-color: #F3F3F3;
+  background-image: url('../img/bgs/agsquare_@2X.png');
+  //background-size: 50px 50px;
+  background-size: 30px 30px;
+}
+
+
 

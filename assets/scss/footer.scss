@@ -1,7 +1,9 @@
 footer.footer {
-  background: #222;
+  //@include moulin_bg;
+  @include rebel_bg;
   color: #FFF;
-  @include mont_regular;
+  //@include mont_regular;
+  @include cantarell_bold;
   text-transform: uppercase;
   text-align: center;
   margin-top: auto;
