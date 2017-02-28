@@ -1,8 +1,6 @@
 body {
-  //background-image: url('../img/diagonal-bg.png');
-  //background-image: url('../img/crossword.png');
   @include agsquare_bg;
-  //background-color: #FAFAFA;
+  @include lato_regular;
   .wrapper {
     display: flex;
     flex-direction: column;
