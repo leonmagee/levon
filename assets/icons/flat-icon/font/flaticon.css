@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 27/02/2017 18:58
+  	Creation date: 28/02/2017 19:50
   	*/
 
 @font-face {
@@ -29,10 +29,8 @@ font-style: normal;
 margin-left: 20px;
 }
 
-.flaticon-javascript:before { content: "\f100"; }
-.flaticon-social:before { content: "\f101"; } /* WordPress */
-.flaticon-git-logo-1:before { content: "\f102"; }
-.flaticon-git-logo:before { content: "\f103"; }
-.flaticon-css-3-logo:before { content: "\f104"; }
-.flaticon-internet:before { content: "\f105"; } /* HTML 5 */
-.flaticon-technology:before { content: "\f106"; } /* PHP */
+.flaticon-computer:before { content: "\f100"; }
+.flaticon-social:before { content: "\f101"; }
+.flaticon-git-logo:before { content: "\f102"; }
+.flaticon-css-3-logo:before { content: "\f103"; }
+.flaticon-internet:before { content: "\f104"; } /* html 5 */

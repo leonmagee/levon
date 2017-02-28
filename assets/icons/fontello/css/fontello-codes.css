@@ -1,3 +1,6 @@
 
-.icon-react-logo:before { content: '\e800'; } /* '' */
-.icon-javascript_logo:before { content: '\e801'; } /* '' */
+.icon-jquery:before { content: '\e800'; } /* '' */
+.icon-javascript:before { content: '\e801'; } /* '' */
+.icon-laravel:before { content: '\e802'; } /* '' */
+.icon-php:before { content: '\e803'; } /* '' */
+.icon-react:before { content: '\e804'; } /* '' */

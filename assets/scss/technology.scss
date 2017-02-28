@@ -3,12 +3,11 @@ technologies {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-
   .tech-item {
     opacity: 0.9;
     text-align: center;
-    flex: 0 1 13%;
-    margin: 20px 20px 80px;
+    flex: 0 1 20%;
+    margin: 20px 0 80px;
     height: 100%;
     position: relative;
     .tech-icon {
