@@ -62,31 +62,49 @@
 
   h1 {
     background-color: $brand-primary;
-    color: #F7F7F7;
+    color: $bright-white;
     padding: 5px 10px;
     text-transform: uppercase;
+    margin-bottom: 0;
   }
 
   // single
-  .project-bio {
-    font-size: 17px;
-    padding: 0 5px;
+  .project-single-header {
+    display: flex;
+    .project-bio {
+      flex: 1 1 67%;
+      font-size: 17px;
+      padding: 0 5px;
+    }
+    .tech {
+      h3 {
+        background-color: $brand-second;
+        font-size: 14px;
+        padding: 5px 10px;
+        color: $bright-white;
+      }
+      flex: 1 1 33%;
+    }
   }
-
   .project-gallery {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    padding-top: 10px;
     .gallery-image {
       flex: 0 1 30%;
       margin-bottom: 50px;
-
-      img {
-        border: 1px solid #EEE;
+      a {
+        img {
+          border: 1px solid #EEE;
+        }
+        &:hover {
+          opacity: 0.85;
+          img {
+            border-color: lighten($brand-primary, 20%);
+          }
+        }
       }
     }
   }
-
 }

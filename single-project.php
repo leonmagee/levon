@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php get_header();
+
+require_once( 'lib/class-tech-loop.php' ); ?>
 
 <main role="main">
 	<!-- section -->
@@ -13,8 +15,19 @@
 				<h1><?php the_title(); ?></h1>
 				<!-- /post title -->
 
-				<div class="project-bio">
-					<?php the_content(); // Dynamic Content ?>
+				<div class="project-single-header">
+
+					<div class="project-bio">
+						<?php the_content(); // Dynamic Content ?>
+					</div>
+
+					<div class="tech">
+						<h3>Tech Used</h3>
+						<?php $tech = get_field( 'technologies' );
+						tech_loop::output_icons($tech);
+						?>
+					</div>
+
 				</div>
 				<?php if ( $gallery = get_field( 'gallery' ) ) { ?>
 					<div class="project-gallery">
