@@ -16,12 +16,20 @@
 				<div class="project-bio">
 					<?php the_content(); // Dynamic Content ?>
 				</div>
-
+				<?php if ( $gallery = get_field( 'gallery' ) ) { ?>
+					<div class="project-gallery">
+						<?php foreach ( $gallery as $image ) { ?>
+							<div class="gallery-image">
+								<a rel="lightbox" href="<?php echo $image['url']; ?>">
+									<img src="<?php echo $image['sizes']['medium']; ?>"/>
+								</a>
+							</div>
+						<?php } ?>
+					</div>
+				<?php } ?>
 			</article>
 			<!-- /article -->
-
 		<?php endwhile; ?>
-
 		<?php else: ?>
 
 			<!-- article -->
