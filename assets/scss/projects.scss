@@ -57,43 +57,61 @@
     }
   }
 }
-
 .project-single {
-
   h1 {
     background-color: $brand-primary;
     color: $bright-white;
     padding: 5px 10px;
     text-transform: uppercase;
     margin-bottom: 0;
+    margin-top: 0;
+    @media(min-width: $screen-sm) {
+      margin-top: 15px;
+    }
   }
 
   // single
   .project-single-header {
-    display: flex;
+    @media(min-width: $screen-sm) {
+      display: flex;
+    }
     .project-bio {
-      flex: 1 1 67%;
+      //flex: 1 1 100%;
       font-size: 17px;
-      padding: 0 5px;
+      padding: 0 15px;
+      @media(min-width: $screen-sm) {
+        flex: 1 1 67%;
+        padding: 0 5px;
+      }
     }
     .tech {
+      //flex: 1 1 100%;
+      @media(min-width: $screen-sm) {
+        flex: 1 1 33%;
+      }
       h3 {
         background-color: $brand-second;
         font-size: 14px;
         padding: 5px 10px;
         color: $bright-white;
+        margin-top: 20px;
       }
-      flex: 1 1 33%;
     }
   }
   .project-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 10px;
+    @media(min-width: $screen-sm) {
+      display: flex;
+      padding-top: 10px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
     .gallery-image {
-      flex: 0 1 30%;
-      margin-bottom: 50px;
+      padding: 30px;
+      @media(min-width: $screen-sm) {
+        flex: 0 1 30%;
+        padding: 0;
+        margin-bottom: 50px;
+      }
       a {
         img {
           border: 1px solid #EEE;

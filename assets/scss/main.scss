@@ -1,6 +1,12 @@
 body {
   @include agsquare_bg;
   @include lato_regular;
+  a {
+    color: $brand-primary;
+    &:hover {
+      color: lighten($brand-primary, 10%);
+    }
+  }
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -36,4 +42,9 @@ body {
 // hide caption
 .tos-caption {
   display: none;
+}
+
+// clear
+.pushbottom {
+  clear: both;
 }

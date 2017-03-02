@@ -29,6 +29,8 @@ class tech_loop {
 
 						<div class="tech-name"><?php the_title(); ?></div>
 
+						<div class="pushbottom"></div>
+
 					</div>
 
 				<?php endwhile; endif;
