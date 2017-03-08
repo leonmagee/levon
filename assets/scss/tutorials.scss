@@ -82,7 +82,7 @@ special {
 }
 
 nav.flexbox-menu-example {
-  background: #333;
+  background: $brand-fourth;
   ul {
     list-style-type: none;
     padding: 0;
@@ -114,6 +114,7 @@ nav.flexbox-menu-example {
         text-decoration: none;
         &:hover {
           background: lighten( $brand-primary, 5% );
+          cursor: pointer;
         }
       }
     }
