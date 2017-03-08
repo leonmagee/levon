@@ -6,15 +6,13 @@ get_header(); ?>
 <main role="main">
 	<!-- section -->
 	<section>
-		<?php
-		/**
-		 * @todo pull this all from Theme Options
-		 */
-		?>
 		<div class="homepage-large-text">
-			<h1>Mobile & Web Development</h1>
-			<p>Mobile Apps built with React Native for IOS and Android.</p>
-			<p>WordPress Themes and Plugins.</p>
+			<?php if ( $main_tagline = get_field( 'main_tagline', 'option' ) ) { ?>
+				<h1><?php echo $main_tagline; ?></h1>
+			<?php } ?>
+			<?php if ( $secondary_tagline = get_field( 'secondary_tagline', 'option' ) ) { ?>
+				<p><?php echo $secondary_tagline; ?></p>
+			<?php } ?>
 		</div>
 
 		<?php

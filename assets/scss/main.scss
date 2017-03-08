@@ -7,6 +7,27 @@ body {
       color: lighten($brand-primary, 10%);
     }
   }
+
+  article.single {
+    font-size: 17px;
+    background-color: #FFF;
+    border: 1px solid #EEE;
+    padding: 0 10px 10px;
+    margin-top: 20px;
+    //line-height: 12px;
+
+    h1 {
+      margin-top: 5px;
+      text-transform: uppercase;
+      a {
+        color: #222;
+      }
+    }
+
+    .content-wrap {
+      padding: 10px 5px;
+    }
+  }
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -48,3 +69,4 @@ body {
 .pushbottom {
   clear: both;
 }
+

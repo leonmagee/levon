@@ -25,6 +25,14 @@ function levon_register_post_types() {
 		'Technology',
 		'Technologies',
 		'technologies',
+		'admin-tools'
+	);
+
+	levon_create_cpt::create_post_type(
+		'tutorial',
+		'Tutorial',
+		'Tutorials',
+		'tutorials',
 		'welcome-learn-more'
 	);
 }
@@ -424,5 +432,23 @@ function html5_shortcode_demo_2( $atts, $content = null ) // Demo Heading H2 sho
 {
 	return '<h2>' . $content . '</h2>';
 }
+
+
+/**
+ * Add ACF Theme Options Page
+ */
+if ( function_exists( 'acf_add_options_page' ) ) {
+
+	acf_add_options_page( array(
+		'page_title' => 'Theme General Settings',
+		'menu_title' => 'Theme Settings',
+		'menu_slug'  => 'theme-general-settings',
+		'capability' => 'edit_posts',
+		'redirect'   => false,
+		'icon_url'   => 'dashicons-admin-settings',
+		'position'   => 4
+	) );
+}
+
 
 ?>

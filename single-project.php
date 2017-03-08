@@ -24,7 +24,9 @@ require_once( 'lib/class-tech-loop.php' ); ?>
 					<div class="tech">
 						<h3>Tech Used</h3>
 						<?php $tech = get_field( 'technologies' );
-						tech_loop::output_icons($tech);
+						if ( $tech ) {
+							tech_loop::output_icons($tech);
+						}
 						?>
 					</div>
 
