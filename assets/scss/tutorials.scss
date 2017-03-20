@@ -21,7 +21,6 @@
   }
 }
 
-
 code {
   @include lato_bold;
   color: $brand-second;
@@ -102,9 +101,7 @@ nav.flexbox-menu-example {
       justify-content: space-between;
     }
 
-
     li {
-      //text-align: center;
       background: $brand-primary;
       a {
         padding: 10px;
@@ -113,9 +110,47 @@ nav.flexbox-menu-example {
         color: #FFF;
         text-decoration: none;
         &:hover {
-          background: lighten( $brand-primary, 5% );
+          background: lighten($brand-primary, 5%);
           cursor: pointer;
         }
+      }
+    }
+  }
+}
+
+.basic-repsponsive-layout {
+  .container > * {
+    padding: 10px;
+  }
+  header, footer {
+    background: $brand-primary;
+    color: #FFF;
+    @include cantarell_bold;
+  }
+  footer {
+    font-size: 12px;
+  }
+  .container {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid #DDD;
+  }
+  .content {
+    flex: 1;
+    &.with-sidebar {
+      //flex: 0;
+      margin-bottom: auto;
+      display: flex;
+      @media(max-width: $screen-sm) {
+        flex-direction: column-reverse;
+      }
+      .sidebar {
+        padding-right: 35px;
+      }
+      .text {
+        padding-top: 15px;
       }
     }
   }
