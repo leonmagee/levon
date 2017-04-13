@@ -11,7 +11,7 @@ technologies {
     text-align: center;
     flex: 0 1 20%;
     position: relative;
-    min-height: 90px;
+    min-height: 80px;
     .tech-icon {
       i {
         &:before {
@@ -45,8 +45,9 @@ technologies {
   .tech {
     technologies {
       padding: 0 10px;
+      justify-content: flex-start;
       .tech-item {
-        flex: 0 1 27%;
+        flex: 0 1 33%;
         //min-height: 90px;
         .tech-icon {
           i {
