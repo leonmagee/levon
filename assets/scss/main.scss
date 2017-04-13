@@ -1,5 +1,6 @@
 body {
-  @include agsquare_bg;
+  //@include agsquare_bg;
+  background-color: #FAFAFA;
   @include lato_regular;
   a {
     color: $brand-primary;
