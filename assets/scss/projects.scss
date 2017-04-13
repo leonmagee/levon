@@ -101,12 +101,20 @@ h1.solid-bg {
       @media(min-width: $screen-sm) {
         flex: 1 1 20%;
       }
+      .tech-inner {
+        background: #FAFAFA;
+        border-left: 1px solid #EEE;
+        border-right: 1px solid #EEE;
+        border-bottom: 1px solid #EEE;
+        padding-top: 15px;
+      }
       h3 {
         background-color: $brand-second;
         font-size: 14px;
         padding: 5px 10px;
         color: $bright-white;
         margin-top: 20px;
+        margin-bottom: 0;
       }
     }
   }

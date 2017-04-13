@@ -17,16 +17,44 @@ get_header(); ?>
 
 		<?php
 		/**
-		 * Products Loop
+		 * Homepage Sections
 		 */
-		get_template_part( 'lib/projects_loop' );
 		?>
+        <div class="homepage-section">
+           <h1 class="homepage-section-title">Work / Projects</h1>
+            <?php
+            /**
+            * Products Loop
+            */
+            get_template_part( 'lib/projects_loop' );
+            ?>
+        </div>
+
+        <div class="homepage-section">
+            <h1 class="homepage-section-title">Tutorials</h1>
+			<?php
+			/**
+			 * Tutorials Links
+			 */
+			//get_template_part( 'lib/projects_loop' );
+			?>
+        </div>
+
+        <div class="homepage-section">
+            <h1 class="homepage-section-title">Technologies</h1>
+			<?php
+			/**
+			 * Tech Icons
+			 */
+			//get_template_part( 'lib/projects_loop' );
+			?>
+        </div>
+
+
 
 	</section>
-	<!-- /section -->
-</main>
 
-<?php //get_sidebar(); ?>
+</main>
 
 <?php get_footer(); ?>
 

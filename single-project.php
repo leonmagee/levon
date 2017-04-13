@@ -23,13 +23,14 @@ require_once( 'lib/class-tech-loop.php' ); ?>
 
 					<div class="tech">
 						<h3>Tech Used</h3>
-						<?php $tech = get_field( 'technologies' );
-						if ( $tech ) {
-							tech_loop::output_icons($tech);
-						}
-						?>
+                        <div class="tech-inner">
+	                        <?php $tech = get_field( 'technologies' );
+	                        if ( $tech ) {
+		                        tech_loop::output_icons($tech);
+	                        }
+	                        ?>
+                        </div>
 					</div>
-
 				</div>
 				<?php if ( $gallery = get_field( 'gallery' ) ) { ?>
 					<div class="project-gallery">
