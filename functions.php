@@ -450,5 +450,12 @@ if ( function_exists( 'acf_add_options_page' ) ) {
 	) );
 }
 
+function tutorial_more_text($data) {
+	$new_string = str_replace( 'View Article', 'Read Tutorial', $data );
+
+    return $new_string;
+
+}
+
 
 ?>
