@@ -2,17 +2,27 @@ header.header {
   //@include moulin_bg;
   @include rebel_bg;
   .header-inner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     @media(min-width: $screen-sm) {
+      display: flex;
+      align-items: center;
+      //justify-content: center;
       justify-content: space-between;
     }
     .site-title {
       @include cantarell_bold_italic;
       font-size: 3.5em;
       text-transform: uppercase;
-      flex: 1;
+      @media(max-width: 767px) {
+        text-align: center;
+        .site-title-inner {
+          display: inline-block;
+        }
+      }
+      @media(min-width: $screen-sm) {
+        flex: 1;
+      }
+
       a {
         color: $base-white;
         display: flex;
@@ -40,11 +50,19 @@ header.header {
       }
     }
     .nav {
+
       ul {
         display: flex;
         color: #FFF;
         font-size: 2em;
         list-style-type: none;
+        @media(max-width: 767px) {
+          background-color: rgba(255,255,255,0.05);
+          justify-content: center;
+          padding: 10px 0;
+          margin-top: 5px;
+          margin-bottom: 0;
+        }
         li {
           margin: 0 15px;
           a {

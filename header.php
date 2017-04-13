@@ -35,14 +35,16 @@
 		<div class="max-width-wrap header-inner">
 			<!-- logo -->
 			<div class="site-title">
-				<a href="<?php echo home_url(); ?>">
-					<span class="logo logo_1">l</span>
-					<span class="logo logo_2">e</span>
-					<span class="logo logo_3">v</span>
-					<span class="logo logo_4">o</span>
-					<span class="logo logo_5">n</span>
-					<?php //echo bloginfo('name'); ?>
-				</a>
+                <div class="site-title-inner">
+                    <a href="<?php echo home_url(); ?>">
+                        <span class="logo logo_1">l</span>
+                        <span class="logo logo_2">e</span>
+                        <span class="logo logo_3">v</span>
+                        <span class="logo logo_4">o</span>
+                        <span class="logo logo_5">n</span>
+		                <?php //echo bloginfo('name'); ?>
+                    </a>
+                </div>
 			</div>
 			<!-- /logo -->
 
