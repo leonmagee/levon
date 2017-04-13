@@ -125,7 +125,7 @@ function html5blank_header_scripts() {
 		wp_register_script( 'html5blankscripts', get_template_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ), '1.0.0' ); // Custom scripts
 		wp_enqueue_script( 'html5blankscripts' ); // Enqueue it!
 
-        wp_enqueue_script( 'test-js', get_template_directory_uri() . '/assets/js/js-tester.js' );
+        wp_enqueue_script( 'test-js', get_template_directory_uri() . '/assets/js/js-tester.js', '', '', true );
 	}
 }
 

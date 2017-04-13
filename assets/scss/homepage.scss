@@ -1,6 +1,6 @@
 .homepage-large-text {
   text-align: center;
-  padding: 5px 10px;
+  padding: 30px 10px;
   h1 {
     font-size: 3em;
     line-height: 1.3em;
@@ -17,6 +17,44 @@
     font-size: 1.5em;
     @media(min-width: $screen-sm) {
       font-size: 1.7em;
+    }
+  }
+}
+
+h1.homepage-section-title {
+}
+
+// tutorial section
+.homepage-outer-tutorial {
+  padding: 0 15px;
+  @media(min-width: $screen-sm) {
+    display: flex;
+    justify-content: space-between;
+  }
+  .tutorial-homepage-wrap {
+    padding: 5px;
+    @media(min-width: $screen-sm) {
+
+      flex: 0 1 48%;
+    }
+    h2 {
+      font-size: 20px;
+      margin-bottom: 0;
+      border-bottom: 1px solid #E3E3E3;
+
+      @media(min-width: $screen-sm) {
+        font-size: 30px;
+      }
+      a {
+        color: $brand-second;
+        &:hover {
+          color: darken( $brand-second, 5% );
+        }
+      }
+    }
+    .tutorial-excerpt {
+      padding: 10px 0;
+      font-size: 16px;
     }
   }
 }
