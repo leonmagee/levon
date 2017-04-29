@@ -23,7 +23,7 @@ require_once( 'lib/class-tech-loop.php' ); ?>
 						if ( $site_url = get_field( 'url' ) ) {
 							echo '<h2><a target="_blank" href="' . $site_url . '">Go to Site</a></h2>';
                        } else {
-							echo '<h3>This site is currently being developed</h3>';
+							echo '<h3>This project is currently being developed</h3>';
 						}
 
 						?>
