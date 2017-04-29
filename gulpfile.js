@@ -54,6 +54,15 @@ gulp.task('watch', function () {
         util.log(util.colors.blue('[ ' + file.path + ' ]'));
     });
 
+    var js = 'assets/js/**/*.js';
+
+    gulp.watch(js).on('change', function (file) {
+
+        gulp.src(js).pipe(browserSync.stream());
+
+        util.log(util.colors.blue('[ ' + file.path + ' ]'));
+    });
+
     /**
      *  Watch SCSS files for changes - trigger 'scss' task
      */
