@@ -6,6 +6,9 @@
 // Load any external files you have here
 require_once( 'lib/levon_create_cpt.php' );
 
+// rest api
+require_once( 'lib/rest-api-endpoints.php' );
+
 /**
  * Create CPTs
  */
@@ -125,7 +128,7 @@ function html5blank_header_scripts() {
 		wp_register_script( 'html5blankscripts', get_template_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ), '1.0.0' ); // Custom scripts
 		wp_enqueue_script( 'html5blankscripts' ); // Enqueue it!
 
-        wp_enqueue_script( 'test-js', get_template_directory_uri() . '/assets/js/js-tester.js', '', '', true );
+		wp_enqueue_script( 'test-js', get_template_directory_uri() . '/assets/js/js-tester.js', '', '', true );
 	}
 }
 
@@ -328,40 +331,40 @@ function html5blankcomments( $comment, $args, $depth ) {
 		$add_below = 'div-comment';
 	}
 	?>
-	<!-- heads up: starting < for the html tag (li or div) in the next line: -->
-	<<?php echo $tag ?><?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ) ?> id="comment-<?php comment_ID() ?>">
+    <!-- heads up: starting < for the html tag (li or div) in the next line: -->
+    <<?php echo $tag ?><?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ) ?> id="comment-<?php comment_ID() ?>">
 	<?php if ( 'div' != $args['style'] ) : ?>
-		<div id="div-comment-<?php comment_ID() ?>" class="comment-body">
+        <div id="div-comment-<?php comment_ID() ?>" class="comment-body">
 	<?php endif; ?>
-	<div class="comment-author vcard">
+    <div class="comment-author vcard">
 		<?php if ( $args['avatar_size'] != 0 ) {
 			echo get_avatar( $comment, $args['180'] );
 		} ?>
 		<?php printf( __( '<cite class="fn">%s</cite> <span class="says">says:</span>' ), get_comment_author_link() ) ?>
-	</div>
+    </div>
 	<?php if ( $comment->comment_approved == '0' ) : ?>
-		<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ) ?></em>
-		<br/>
+        <em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ) ?></em>
+        <br/>
 	<?php endif; ?>
 
-	<div class="comment-meta commentmetadata"><a
-			href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>">
+    <div class="comment-meta commentmetadata"><a
+                href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>">
 			<?php
 			printf( __( '%1$s at %2$s' ), get_comment_date(), get_comment_time() ) ?></a><?php edit_comment_link( __( '(Edit)' ), '  ', '' );
 		?>
-	</div>
+    </div>
 
 	<?php comment_text() ?>
 
-	<div class="reply">
+    <div class="reply">
 		<?php comment_reply_link( array_merge( $args, array(
 			'add_below' => $add_below,
 			'depth'     => $depth,
 			'max_depth' => $args['max_depth']
 		) ) ) ?>
-	</div>
+    </div>
 	<?php if ( 'div' != $args['style'] ) : ?>
-		</div>
+        </div>
 	<?php endif; ?>
 <?php }
 
@@ -452,12 +455,60 @@ if ( function_exists( 'acf_add_options_page' ) ) {
 	) );
 }
 
-function tutorial_more_text($data) {
+function tutorial_more_text( $data ) {
 	$new_string = str_replace( 'View Article', 'Read Tutorial', $data );
 
-    return $new_string;
+	return $new_string;
 
 }
+
+
+
+/**
+ * Temp - create table
+ */
+global $wpdb;
+
+$prefix     = $wpdb->prefix;
+$table_name = $prefix . 'quizian';
+
+//$charset_collate = $wpdb->get_charset_collate();
+//
+//$sql = "CREATE TABLE $table_name (
+//		id mediumint(9) NOT NULL AUTO_INCREMENT,
+//		question text NOT NULL,
+//		correct text NOT NULL,
+//		incorrect_1 text NOT NULL,
+//		incorrect_2 text NOT NULL,
+//		incorrect_3 text NOT NULL,
+//		cat text NOT NULL,
+//		sub_cat text NOT NULL,
+//		sub_sub_cat text NOT NULL,
+//		PRIMARY KEY  (id)
+//	) $charset_collate;";
+//
+//require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+//dbDelta( $sql );
+
+//$wpdb->insert($table_name, array(
+//	'question' => 'What number was worn by NBA great Kevin McHale?',
+//	'correct' => '34',
+//	'incorrect_1' => '23',
+//	'incorrect_2' => '33',
+//	'incorrect_3' => '35',
+//	'cat' => 'sports',
+//	'sub_cat' => 'basketball',
+//	'sub_sub_cat' => 'nba',
+//));
+
+
+
+
+
+
+
+
+
 
 
 ?>
