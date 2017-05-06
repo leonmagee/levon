@@ -467,28 +467,28 @@ function tutorial_more_text( $data ) {
 /**
  * Temp - create table
  */
-global $wpdb;
-
-$prefix     = $wpdb->prefix;
-$table_name = $prefix . 'quizian';
-
-$charset_collate = $wpdb->get_charset_collate();
-
-$sql = "CREATE TABLE $table_name (
-		id mediumint(9) NOT NULL AUTO_INCREMENT,
-		question text NOT NULL,
-		correct text NOT NULL,
-		incorrect_1 text NOT NULL,
-		incorrect_2 text NOT NULL,
-		incorrect_3 text NOT NULL,
-		cat text NOT NULL,
-		sub_cat text NOT NULL,
-		sub_sub_cat text NOT NULL,
-		PRIMARY KEY  (id)
-	) $charset_collate;";
-
-require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
-dbDelta( $sql );
+//global $wpdb;
+//
+//$prefix     = $wpdb->prefix;
+//$table_name = $prefix . 'quizian';
+//
+//$charset_collate = $wpdb->get_charset_collate();
+//
+//$sql = "CREATE TABLE $table_name (
+//		id mediumint(9) NOT NULL AUTO_INCREMENT,
+//		question text NOT NULL,
+//		correct text NOT NULL,
+//		incorrect_1 text NOT NULL,
+//		incorrect_2 text NOT NULL,
+//		incorrect_3 text NOT NULL,
+//		cat text NOT NULL,
+//		sub_cat text NOT NULL,
+//		sub_sub_cat text NOT NULL,
+//		PRIMARY KEY  (id)
+//	) $charset_collate;";
+//
+//require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+//dbDelta( $sql );
 
 
 
