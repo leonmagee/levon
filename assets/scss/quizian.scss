@@ -1,0 +1,28 @@
+.quizian {
+  .quizian-input {
+
+    width: 600px;
+    margin: 10px;
+    input {
+      width: 100%;
+      font-size: 16px;
+      padding: 8px 15px;
+    }
+    select {
+      width: 150px;
+      font-size: 16px;
+      padding: 8px 15px;
+    }
+    button {
+      font-size: 16px;
+      padding: 8px 15px;
+      background-color: $brand-primary;
+      color: #FFF;
+      border: none;
+      border-radius: 5px;
+      &:hover {
+        background-color: darken( $brand-primary, 5% );
+      }
+    }
+  }
+}

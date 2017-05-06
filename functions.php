@@ -472,34 +472,23 @@ global $wpdb;
 $prefix     = $wpdb->prefix;
 $table_name = $prefix . 'quizian';
 
-//$charset_collate = $wpdb->get_charset_collate();
-//
-//$sql = "CREATE TABLE $table_name (
-//		id mediumint(9) NOT NULL AUTO_INCREMENT,
-//		question text NOT NULL,
-//		correct text NOT NULL,
-//		incorrect_1 text NOT NULL,
-//		incorrect_2 text NOT NULL,
-//		incorrect_3 text NOT NULL,
-//		cat text NOT NULL,
-//		sub_cat text NOT NULL,
-//		sub_sub_cat text NOT NULL,
-//		PRIMARY KEY  (id)
-//	) $charset_collate;";
-//
-//require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
-//dbDelta( $sql );
+$charset_collate = $wpdb->get_charset_collate();
 
-//$wpdb->insert($table_name, array(
-//	'question' => 'What number was worn by NBA great Kevin McHale?',
-//	'correct' => '34',
-//	'incorrect_1' => '23',
-//	'incorrect_2' => '33',
-//	'incorrect_3' => '35',
-//	'cat' => 'sports',
-//	'sub_cat' => 'basketball',
-//	'sub_sub_cat' => 'nba',
-//));
+$sql = "CREATE TABLE $table_name (
+		id mediumint(9) NOT NULL AUTO_INCREMENT,
+		question text NOT NULL,
+		correct text NOT NULL,
+		incorrect_1 text NOT NULL,
+		incorrect_2 text NOT NULL,
+		incorrect_3 text NOT NULL,
+		cat text NOT NULL,
+		sub_cat text NOT NULL,
+		sub_sub_cat text NOT NULL,
+		PRIMARY KEY  (id)
+	) $charset_collate;";
+
+require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+dbDelta( $sql );
 
 
 
