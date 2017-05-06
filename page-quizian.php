@@ -3,9 +3,9 @@
  * Template Name: Quizian Question Form
  */
 
-// process form submission
-
-
+/**
+ * process form submission
+ **/
 if (
 	isset( $_POST['question'] ) && ( $question = $_POST['question'] )
 	&& isset( $_POST['correct'] ) && ( $correct = $_POST['correct'] )
@@ -13,15 +13,6 @@ if (
 	&& isset( $_POST['incorrect_2'] ) && ( $incorrect_2 = $_POST['incorrect_2'] )
 	&& isset( $_POST['incorrect_3'] ) && ( $incorrect_3 = $_POST['incorrect_3'] )
 ) {
-	var_dump( $question );
-	var_dump( $correct );
-	var_dump( $incorrect_1 );
-	var_dump( $incorrect_2 );
-	var_dump( $incorrect_3 );
-	var_dump( $_POST['category'] );
-	var_dump( $_POST['sub_category'] );
-	var_dump( $_POST['sub_sub_category'] );
-
 	global $wpdb;
 
 	$prefix     = $wpdb->prefix;
@@ -37,8 +28,6 @@ if (
 		'sub_cat'     => $_POST['sub_category'],
 		'sub_sub_cat' => $_POST['sub_sub_category'],
 	) );
-
-
 }
 
 
@@ -49,7 +38,6 @@ get_header(); ?>
     <section class="quizian">
 
         <h1>Quizian</h1>
-
 
         <form action="" method="post">
             <div class="quizian-input">
