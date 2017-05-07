@@ -20,30 +20,20 @@ function levon_rest_api_sports_bb_nba() {
 	/**
 	 * Get Professional Basketball Data
 	 */
-
-
 	global $wpdb;
 
 	$table = $wpdb->prefix . 'quizian';
 	$query = "SELECT `question`, `correct`, `incorrect_1`, `incorrect_2`, `incorrect_3` from {$table} WHERE `sub_sub_cat` = 'nba'";
-	$data = $wpdb->get_results($query);
+	$data  = $wpdb->get_results( $query );
 
-	return $data;
+	$data_array = [];
+	foreach ( $data as $item ) {
+		$data_array[] = array(
+			'q' => $item->question,
+			'c' => $item->correct,
+			'i' => array( $item->incorrect_1, $item->incorrect_2, $item->incorrect_3 ),
+		);
+	}
 
-//	$data_array = array(
-//		array(
-//			'q' => 'What number was worn by NBA great Larry Bird?',
-//			'c' => '33',
-//			'i' => array( '23', '34', '35' ),
-//			'm' => array(
-//				'c' => 'sports',
-//				'sc' => 'basketball',
-//				'ssc' => 'nba'
-//			)
-//		)
-//	);
-//
-//
-//	return $data_array;
+	return $data_array;
 }
-
