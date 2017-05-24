@@ -3,6 +3,10 @@
  * Template Name: Quizian Question Form
  */
 
+$cat  = $_GET['cat'] ? $_GET['cat'] : '';
+$cat2 = $_GET['cat2'] ? $_GET['cat2'] : '';
+$cat3 = $_GET['cat3'] ? $_GET['cat3'] : '';
+
 /**
  * process form submission
  **/
@@ -13,6 +17,7 @@ if (
 	&& isset( $_POST['incorrect_2'] ) && ( $incorrect_2 = $_POST['incorrect_2'] )
 	&& isset( $_POST['incorrect_3'] ) && ( $incorrect_3 = $_POST['incorrect_3'] )
 ) {
+
 	global $wpdb;
 
 	$prefix     = $wpdb->prefix;
@@ -24,9 +29,9 @@ if (
 		'incorrect_1' => $incorrect_1,
 		'incorrect_2' => $incorrect_2,
 		'incorrect_3' => $incorrect_3,
-		'cat'         => $_POST['category'],
-		'sub_cat'     => $_POST['sub_category'],
-		'sub_sub_cat' => $_POST['sub_sub_category'],
+		'cat'         => $cat,
+		'sub_cat'     => $cat2,
+		'sub_sub_cat' => $cat3,
 	) );
 }
 
@@ -55,24 +60,28 @@ get_header(); ?>
             <div class="quizian-input">
                 <input name="incorrect_3" placeholder="Incorrect Answer 3"/>
             </div>
-            <div class="quizian-input">
-                <select name="category">
-                    <option value="sports">Sports</option>
-                    <option value="art">Art</option>
-                </select>
-            </div>
-            <div class="quizian-input">
-                <select name="sub_category">
-                    <option value="basketball">Basketball</option>
-                    <option value="baseball">Baseball</option>
-                </select>
-            </div>
-            <div class="quizian-input">
-                <select name="sub_sub_category">
-                    <option value="nba">NBA</option>
-                    <option value="ncaa">NCAA</option>
-                </select>
-            </div>
+            <!--            <div class="quizian-input">-->
+            <!--                <select name="category">-->
+            <!--                    <option value="">--</option>-->
+            <!--                    <option value="sports">Sports</option>-->
+            <!--                    <option value="art">Art</option>-->
+            <!--                    <option value="art">History</option>-->
+            <!--                </select>-->
+            <!--            </div>-->
+            <!--            <div class="quizian-input">-->
+            <!--                <select name="sub_category">-->
+            <!--                    <option value="">--</option>-->
+            <!--                    <option value="basketball">Basketball</option>-->
+            <!--                    <option value="baseball">Baseball</option>-->
+            <!--                </select>-->
+            <!--            </div>-->
+            <!--            <div class="quizian-input">-->
+            <!--                <select name="sub_sub_category">-->
+            <!--                    <option value="">--</option>-->
+            <!--                    <option value="nba">NBA</option>-->
+            <!--                    <option value="ncaa">NCAA</option>-->
+            <!--                </select>-->
+            <!--            </div>-->
             <div class="quizian-input">
                 <button type="submit">Submit</button>
             </div>

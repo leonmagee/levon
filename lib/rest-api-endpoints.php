@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Generate endpoint for REST API
  */
