@@ -3,10 +3,22 @@
  * Template Name: Quizian Question Form
  */
 
-$cat  = $_GET['cat'] ? $_GET['cat'] : '';
-$cat2 = $_GET['cat2'] ? $_GET['cat2'] : '';
-$cat3 = $_GET['cat3'] ? $_GET['cat3'] : '';
-$var = 'tessssssdftss';
+if ( isset($_GET['cat'])) {
+	$cat  = $_GET['cat'];
+} else {
+	$cat  = '';
+}
+if ( isset($_GET['cat2'])) {
+	$cat2  = $_GET['cat2'];
+} else {
+	$cat2  = '';
+}
+if ( isset($_GET['cat3'])) {
+	$cat3  = $_GET['cat3'];
+} else {
+	$cat3  = '';
+}
+
 
 /**
  * process form submission
