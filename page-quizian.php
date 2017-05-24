@@ -6,7 +6,7 @@
 $cat  = $_GET['cat'] ? $_GET['cat'] : '';
 $cat2 = $_GET['cat2'] ? $_GET['cat2'] : '';
 $cat3 = $_GET['cat3'] ? $_GET['cat3'] : '';
-$var = 'test';
+$var = 'tessssst';
 
 /**
  * process form submission
