@@ -9,7 +9,7 @@ add_action( 'rest_api_init', 'cr_register_rest_endpoint' );
  */
 function cr_register_rest_endpoint() {
 
-	register_rest_route( 'quizian', '/questions)', array(
+	register_rest_route( 'quizian', '/questions', array(
 		'methods'  => 'GET',
 		'callback' => 'levon_rest_api_questions'
 	) );
