@@ -134,7 +134,7 @@ function levon_rest_api_sports_bb_nba( $param ) {
 
 function levon_rest_api_car_data() {
 	$car_data_array = array(
-		'2017' => array(
+		'year_2017' => array(
 			'Volvo'  => array(
 				'S60' => array(
 					'default',
@@ -152,7 +152,7 @@ function levon_rest_api_car_data() {
 				)
 			)
 		),
-		'2007' => array(
+		'year_2007' => array(
 			'Saturn' => array(
 				'Ion' => array(
 					'default',
