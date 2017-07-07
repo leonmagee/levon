@@ -9,6 +9,7 @@ $test-var: red;
 $base-white: #EFE9F4;
 $bright-white: #F7F7F7;
 
-$screen-sm: '768px';
-$screen-md: '992px';
+// @todo this values were wrapped in quotes before...
+$screen-sm: 768px;
+$screen-md: 992px;
 //$mont: 'Montserrat', sans-serif;
