@@ -49,13 +49,16 @@ get_header(); ?>
 
 					$tutorial_query->the_post(); ?>
 
-                    <div class="tutorial-homepage-wrap">
-                        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                        <div class="tutorial-excerpt">
-							<?php //the_excerpt(); ?>
-							<?php html5wp_excerpt( 'html5wp_index', 'tutorial_more_text' ); // Build your custom callback length in functions.php ?>
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="tutorial-homepage-wrap">
+                            <div class="title-wrap">
+                                <h2><?php the_title(); ?></h2>
+                            </div>
+							<?php if ( has_post_thumbnail() ) {
+								the_post_thumbnail();
+							} ?>
                         </div>
-                    </div>
+                    </a>
 
 				<?php }
 
@@ -70,12 +73,12 @@ get_header(); ?>
         <div class="homepage-section">
             <h1 class="homepage-section-title solid-bg">Technologies</h1>
             <div class="homepage-tech-icons">
-	            <?php
-	            /**
-	             * Tech Icons
-	             */
-	            tech_loop::output_icons(null);
-	            ?>
+				<?php
+				/**
+				 * Tech Icons
+				 */
+				tech_loop::output_icons( null );
+				?>
             </div>
         </div>
     </section>
