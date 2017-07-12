@@ -18,11 +18,6 @@ function cr_register_rest_endpoint() {
 		'methods'  => 'GET',
 		'callback' => 'levon_rest_api_sports_bb_nba'
 	) );
-
-	register_rest_route( 'auto', '/data', array(
-		'methods'  => 'GET',
-		'callback' => 'levon_rest_api_car_data'
-	) );
 }
 
 function levon_rest_api_questions() {
@@ -130,47 +125,4 @@ function levon_rest_api_sports_bb_nba( $param ) {
 	}
 
 	return $data_array;
-}
-
-function levon_rest_api_car_data() {
-	$car_data_array = array(
-		'year_2017' => array(
-			'Volvo'  => array(
-				'S60' => array(
-					'default',
-					'inscription',
-				),
-				'S70' => array(
-					'default',
-					'inscription',
-				)
-			),
-			'BMW' => array(
-				'80Z' => array(
-					'default',
-					'Super Charged',
-				)
-			)
-		),
-		'year_2007' => array(
-			'Saturn' => array(
-				'Ion' => array(
-					'default',
-					'Red Line',
-				)
-			),
-			'Toyota' => array(
-				'Celica' => array(
-					'default',
-					'Red Line',
-				),
-				'Camry' => array(
-					'default',
-					'Red Line',
-				)
-			)
-		)
-	);
-
-	return $car_data_array;
 }
