@@ -3,6 +3,9 @@
 	External Modules/Files
 \*------------------------------------*/
 
+// testing for AWP - Auto Post Creation
+//require_once('lib/post-creation-awp-presentation.php');
+
 // Load any external files you have here
 require_once( 'lib/levon_create_cpt.php' );
 
