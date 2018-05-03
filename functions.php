@@ -151,7 +151,7 @@ function html5blank_styles() {
 	wp_register_style( 'html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all' );
 	wp_enqueue_style( 'html5blank' ); // Enqueue it!
 
-	wp_register_style( 'main-styles', get_template_directory_uri() . '/assets/css/main.min.css' );
+	wp_register_style( 'main-styles', get_template_directory_uri() . '/assets/css/main.min.css','', '1.1.1' );
 	wp_enqueue_style( 'main-styles' ); // Enqueue it!
 
 	wp_register_style( 'flat-icons', get_template_directory_uri() . '/assets/icons/flat-icon/font/flaticon.css' );

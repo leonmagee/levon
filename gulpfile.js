@@ -34,9 +34,13 @@ gulp.task('default', ['scss', 'watch', 'browser-sync']);
 
 gulp.task('browser-sync', function() {
     browserSync.init({
-        proxy: "www.levon.dev", // this proxys my dev site to localhost:3000
+        proxy: "https://www.levon.dev", // this proxys my dev site to localhost:3000
         open: false,
-        port: 9999
+        port: 9999,
+        https: {
+            key: "/Users/leonmagee/.localhost-ssl/key.pem",
+            cert: "/Users/leonmagee/.localhost-ssl/cert.pem"
+        }
     });
 });
 
