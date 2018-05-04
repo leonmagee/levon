@@ -10,7 +10,7 @@
 require_once( 'lib/levon_create_cpt.php' );
 
 // rest api
-require_once( 'lib/rest-api-endpoints.php' );
+//require_once( 'lib/rest-api-endpoints.php' );
 
 /**
  * Create CPTs
@@ -84,10 +84,10 @@ if ( function_exists( 'add_theme_support' ) ) {
 	));*/
 
 	// Enables post and comment RSS feed links to head
-	add_theme_support( 'automatic-feed-links' );
+	//add_theme_support( 'automatic-feed-links' );
 
 	// Localisation Support
-	load_theme_textdomain( 'html5blank', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'levon', get_template_directory() . '/languages' );
 }
 
 /*------------------------------------*\
@@ -119,32 +119,32 @@ function html5blank_nav() {
 }
 
 // Load HTML5 Blank scripts (header.php)
-function html5blank_header_scripts() {
-	if ( $GLOBALS['pagenow'] != 'wp-login.php' && ! is_admin() ) {
+// function html5blank_header_scripts() {
+// 	if ( $GLOBALS['pagenow'] != 'wp-login.php' && ! is_admin() ) {
 
-		wp_register_script( 'conditionizr', get_template_directory_uri() . '/assets/js/lib/conditionizr-4.3.0.min.js', array(), '4.3.0' ); // Conditionizr
-		wp_enqueue_script( 'conditionizr' ); // Enqueue it!
+// 		wp_register_script( 'conditionizr', get_template_directory_uri() . '/assets/js/lib/conditionizr-4.3.0.min.js', array(), '4.3.0' ); // Conditionizr
+// 		wp_enqueue_script( 'conditionizr' ); // Enqueue it!
 
-		wp_register_script( 'modernizr', get_template_directory_uri() . '/assets/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1' ); // Modernizr
-		wp_enqueue_script( 'modernizr' ); // Enqueue it!
+// 		wp_register_script( 'modernizr', get_template_directory_uri() . '/assets/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1' ); // Modernizr
+// 		wp_enqueue_script( 'modernizr' ); // Enqueue it!
 
-		wp_register_script( 'html5blankscripts', get_template_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ), '1.0.0' ); // Custom scripts
-		wp_enqueue_script( 'html5blankscripts' ); // Enqueue it!
+// 		wp_register_script( 'html5blankscripts', get_template_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ), '1.0.0' ); // Custom scripts
+// 		wp_enqueue_script( 'html5blankscripts' ); // Enqueue it!
 
-		wp_enqueue_script( 'test-js', get_template_directory_uri() . '/assets/js/js-tester.js', '', '', true );
-	}
-}
+// 		wp_enqueue_script( 'test-js', get_template_directory_uri() . '/assets/js/js-tester.js', '', '', true );
+// 	}
+// }
 
 // Load HTML5 Blank conditional scripts
-function html5blank_conditional_scripts() {
-	if ( is_page( 'pagenamehere' ) ) {
-		wp_register_script( 'scriptname', get_template_directory_uri() . '/assets/js/scriptname.js', array( 'jquery' ), '1.0.0' ); // Conditional script(s)
-		wp_enqueue_script( 'scriptname' ); // Enqueue it!
-	}
-}
+// function html5blank_conditional_scripts() {
+// 	if ( is_page( 'pagenamehere' ) ) {
+// 		wp_register_script( 'scriptname', get_template_directory_uri() . '/assets/js/scriptname.js', array( 'jquery' ), '1.0.0' ); // Conditional script(s)
+// 		wp_enqueue_script( 'scriptname' ); // Enqueue it!
+// 	}
+// }
 
-// Load HTML5 Blank styles
-function html5blank_styles() {
+// Load Main Styles
+function main_styles() {
 	wp_register_style( 'normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all' );
 	wp_enqueue_style( 'normalize' ); // Enqueue it!
 
@@ -162,16 +162,16 @@ function html5blank_styles() {
 }
 
 // Register HTML5 Blank Navigation
-function register_html5_menu() {
-	register_nav_menus( array( // Using array to specify more menus if needed
-		'header-menu'  => __( 'Header Menu', 'html5blank' ),
-		// Main Navigation
-		'sidebar-menu' => __( 'Sidebar Menu', 'html5blank' ),
-		// Sidebar Navigation
-		'extra-menu'   => __( 'Extra Menu', 'html5blank' )
-		// Extra Navigation if needed (duplicate as many as you need!)
-	) );
-}
+// function register_html5_menu() {
+// 	register_nav_menus( array( // Using array to specify more menus if needed
+// 		'header-menu'  => __( 'Header Menu', 'html5blank' ),
+// 		// Main Navigation
+// 		'sidebar-menu' => __( 'Sidebar Menu', 'html5blank' ),
+// 		// Sidebar Navigation
+// 		'extra-menu'   => __( 'Extra Menu', 'html5blank' )
+// 		// Extra Navigation if needed (duplicate as many as you need!)
+// 	) );
+// }
 
 // Remove the <div> surrounding the dynamic navigation to cleanup markup
 function my_wp_nav_menu_args( $args = '' ) {
@@ -208,29 +208,29 @@ function add_slug_to_body_class( $classes ) {
 }
 
 // If Dynamic Sidebar Exists
-if ( function_exists( 'register_sidebar' ) ) {
-	// Define Sidebar Widget Area 1
-	register_sidebar( array(
-		'name'          => __( 'Widget Area 1', 'html5blank' ),
-		'description'   => __( 'Description for this widget-area...', 'html5blank' ),
-		'id'            => 'widget-area-1',
-		'before_widget' => '<div id="%1$s" class="%2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3>',
-		'after_title'   => '</h3>'
-	) );
+// if ( function_exists( 'register_sidebar' ) ) {
+// 	// Define Sidebar Widget Area 1
+// 	register_sidebar( array(
+// 		'name'          => __( 'Widget Area 1', 'html5blank' ),
+// 		'description'   => __( 'Description for this widget-area...', 'html5blank' ),
+// 		'id'            => 'widget-area-1',
+// 		'before_widget' => '<div id="%1$s" class="%2$s">',
+// 		'after_widget'  => '</div>',
+// 		'before_title'  => '<h3>',
+// 		'after_title'   => '</h3>'
+// 	) );
 
-	// Define Sidebar Widget Area 2
-	register_sidebar( array(
-		'name'          => __( 'Widget Area 2', 'html5blank' ),
-		'description'   => __( 'Description for this widget-area...', 'html5blank' ),
-		'id'            => 'widget-area-2',
-		'before_widget' => '<div id="%1$s" class="%2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3>',
-		'after_title'   => '</h3>'
-	) );
-}
+// 	// Define Sidebar Widget Area 2
+// 	register_sidebar( array(
+// 		'name'          => __( 'Widget Area 2', 'html5blank' ),
+// 		'description'   => __( 'Description for this widget-area...', 'html5blank' ),
+// 		'id'            => 'widget-area-2',
+// 		'before_widget' => '<div id="%1$s" class="%2$s">',
+// 		'after_widget'  => '</div>',
+// 		'before_title'  => '<h3>',
+// 		'after_title'   => '</h3>'
+// 	) );
+// }
 
 // Remove wp_head() injected Recent Comment styles
 function my_remove_recent_comments_style() {
@@ -376,13 +376,13 @@ function html5blankcomments( $comment, $args, $depth ) {
 \*------------------------------------*/
 
 // Add Actions
-add_action( 'init', 'html5blank_header_scripts' ); // Add Custom Scripts to wp_head
-add_action( 'wp_print_scripts', 'html5blank_conditional_scripts' ); // Add Conditional Page Scripts
-add_action( 'get_header', 'enable_threaded_comments' ); // Enable Threaded Comments
-add_action( 'wp_enqueue_scripts', 'html5blank_styles' ); // Add Theme Stylesheet
-add_action( 'init', 'register_html5_menu' ); // Add HTML5 Blank Menu
-add_action( 'widgets_init', 'my_remove_recent_comments_style' ); // Remove inline Recent Comment Styles from wp_head()
-add_action( 'init', 'html5wp_pagination' ); // Add our HTML5 Pagination
+//add_action( 'init', 'html5blank_header_scripts' ); // Add Custom Scripts to wp_head
+//add_action( 'wp_print_scripts', 'html5blank_conditional_scripts' ); // Add Conditional Page Scripts
+//add_action( 'get_header', 'enable_threaded_comments' ); // Enable Threaded Comments
+add_action( 'wp_enqueue_scripts', 'main_styles' ); // Add Theme Stylesheet
+//add_action( 'init', 'register_html5_menu' ); // Add HTML5 Blank Menu
+//add_action( 'widgets_init', 'my_remove_recent_comments_style' ); // Remove inline Recent Comment Styles from wp_head()
+//add_action( 'init', 'html5wp_pagination' ); // Add our HTML5 Pagination
 
 // Remove Actions
 remove_action( 'wp_head', 'feed_links_extra', 3 ); // Display the links to the extra feeds such as category feeds
@@ -431,15 +431,15 @@ add_shortcode( 'html5_shortcode_demo_2', 'html5_shortcode_demo_2' ); // Place [h
 \*------------------------------------*/
 
 // Shortcode Demo with Nested Capability
-function html5_shortcode_demo( $atts, $content = null ) {
-	return '<div class="shortcode-demo">' . do_shortcode( $content ) . '</div>'; // do_shortcode allows for nested Shortcodes
-}
+// function html5_shortcode_demo( $atts, $content = null ) {
+// 	return '<div class="shortcode-demo">' . do_shortcode( $content ) . '</div>'; // do_shortcode allows for nested Shortcodes
+// }
 
-// Shortcode Demo with simple <h2> tag
-function html5_shortcode_demo_2( $atts, $content = null ) // Demo Heading H2 shortcode, allows for nesting within above element. Fully expandable.
-{
-	return '<h2>' . $content . '</h2>';
-}
+// // Shortcode Demo with simple <h2> tag
+// function html5_shortcode_demo_2( $atts, $content = null ) // Demo Heading H2 shortcode, allows for nesting within above element. Fully expandable.
+// {
+// 	return '<h2>' . $content . '</h2>';
+// }
 
 
 /**
@@ -464,43 +464,3 @@ function tutorial_more_text( $data ) {
 	return $new_string;
 
 }
-
-
-
-/**
- * Temp - create table
- */
-//global $wpdb;
-//
-//$prefix     = $wpdb->prefix;
-//$table_name = $prefix . 'quizian';
-//
-//$charset_collate = $wpdb->get_charset_collate();
-//
-//$sql = "CREATE TABLE $table_name (
-//		id mediumint(9) NOT NULL AUTO_INCREMENT,
-//		question text NOT NULL,
-//		correct text NOT NULL,
-//		incorrect_1 text NOT NULL,
-//		incorrect_2 text NOT NULL,
-//		incorrect_3 text NOT NULL,
-//		cat text NOT NULL,
-//		sub_cat text NOT NULL,
-//		sub_sub_cat text NOT NULL,
-//		PRIMARY KEY  (id)
-//	) $charset_collate;";
-//
-//require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
-//dbDelta( $sql );
-
-
-
-
-
-
-
-
-
-
-
-?>

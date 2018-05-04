@@ -1,6 +1,7 @@
 <?php
 /**
- * Template Name: Quizian Question Form
+ * Quizian Question Form // currently inactive
+ * // use this template to add quizan questions
  */
 
 if ( isset($_GET['cat'])) {
