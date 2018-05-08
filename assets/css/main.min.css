@@ -897,7 +897,8 @@ footer.footer {
       grid-template-columns: repeat(4, 1fr); } }
   .projects-wrap .project-item-wrap {
     position: relative;
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
     .projects-wrap .project-item-wrap .project-title h2 {
       color: #222;
       background-color: rgba(0, 0, 0, 0.08);
@@ -912,7 +913,7 @@ footer.footer {
       z-index: 1000;
       width: 100%;
       height: 100%;
-      background-color: rgba(8, 178, 227, 0.4);
+      background-color: rgba(8, 178, 227, 0.2);
       display: none;
       align-items: center;
       justify-content: center; }
@@ -930,6 +931,18 @@ footer.footer {
         @media (min-width: 640px) {
           .projects-wrap .project-item-wrap .hover-shade .extra-info {
             font-size: 14px; } }
+      .projects-wrap .project-item-wrap .hover-shade .project-item-circle {
+        width: 180px;
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #08B2E3;
+        color: #FFF;
+        font-size: 24px;
+        border-radius: 50%;
+        font-weight: 600;
+        border: 2px solid #FFF; }
     .projects-wrap .project-item-wrap:hover {
       opacity: 0.9; }
       .projects-wrap .project-item-wrap:hover .hover-shade {

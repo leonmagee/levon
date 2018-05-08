@@ -18,15 +18,8 @@
 			<div class="project-item-wrap" style="background-image: url('<?php echo $background_image; ?>');">
 				<a href="<?php the_permalink(); ?>">
 					<div class="hover-shade">
-						<?php if ( $bio = get_field( 'small_bio' ) ) { ?>
-							<div class="extra-info">
-								<?php echo $bio; ?>
-							</div>
-						<?php } ?>
+						<div class="project-item-circle">View Project</div>
 					</div>
-					<!--				<div class="project-title">-->
-					<!--					<h2>--><?php //the_title(); ?><!--</h2>-->
-					<!--				</div>-->
 				</a>
 			</div>
 		<?php } ?>
