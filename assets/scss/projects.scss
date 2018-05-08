@@ -1,10 +1,16 @@
 // homepage - archive content
+// @todo refactor this? 
+// @todo I think before I had one for the homepage - one for the archive??
+// careful about single view
 .projects-wrap {
   //padding: 20px;
   //display: flex;
   //flex-wrap: wrap;
   //flex-direction: row;
   //justify-content: space-between;
+  //background: cornflowerblue;
+  background-color: #DDD;
+  height: 100%;
   @media(min-width: $screen-sm) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -20,7 +26,9 @@
     //width: 32%;
     //width: 48%;
     position: relative;
+    //background: tomato;
     //margin-bottom: 25px;
+    background-size: cover;
     @media(min-width: $screen-sm) {
       //width: 25%;
     }
@@ -35,9 +43,11 @@
       }
     }
     .project-image {
-      img {
-        border: 1px solid #EEE;
-      }
+      position: relative;
+      // img {
+      //   border: 1px solid #EEE;
+      //   //height: 100%;
+      // }
     }
     .hover-shade {
       position: absolute;
@@ -58,7 +68,8 @@
         width: 80%;
         height: 74%;
         @media(min-width: $screen-sm) {
-          font-size: 18px;
+          //font-size: 18px;
+          font-size: 14px;
         }
       }
     }

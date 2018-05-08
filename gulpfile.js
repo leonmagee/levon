@@ -10,6 +10,7 @@ var sass = require('gulp-sass');
 var minifycss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var util = require('gulp-util');
+var concat = require('gulp-concat');
 var browserSync = require('browser-sync').create();
 
 // chalk colors: red | blue | yellow | green | cyan | magenta | white
@@ -20,10 +21,16 @@ var browserSync = require('browser-sync').create();
  */
 
 gulp.task('scss', function () {
-    gulp.src(['assets/scss/import.scss'])
+    gulp.src([
+        'assets/css/normalize.css',
+        'assets/css/style.css', 
+        'assets/css/flaticon.css', 
+        'assets/css/fontello.css', 
+        'assets/scss/import.scss'
+        ])
         .pipe(sass({style: 'compressed', errLogToConsole: true}))
-        .pipe(rename('main.min.css'))
-        .pipe(minifycss())
+        .pipe(concat('main.min.css'))
+        //.pipe(minifycss())
         .pipe(gulp.dest('assets/css'))
         .pipe(browserSync.stream());
     util.log(util.colors.red('Compiled!'));

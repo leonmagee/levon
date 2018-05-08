@@ -145,20 +145,20 @@ function html5blank_nav() {
 
 // Load Main Styles
 function main_styles() {
-	wp_register_style( 'normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all' );
-	wp_enqueue_style( 'normalize' ); // Enqueue it!
+	// wp_register_style( 'normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all' );
+	// wp_enqueue_style( 'normalize' ); // Enqueue it!
 
-	wp_register_style( 'html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all' );
-	wp_enqueue_style( 'html5blank' ); // Enqueue it!
+	// wp_register_style( 'html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all' );
+	// wp_enqueue_style( 'html5blank' ); // Enqueue it!
 
 	wp_register_style( 'main-styles', get_template_directory_uri() . '/assets/css/main.min.css','', '1.1.1' );
 	wp_enqueue_style( 'main-styles' ); // Enqueue it!
 
-	wp_register_style( 'flat-icons', get_template_directory_uri() . '/assets/icons/flat-icon/font/flaticon.css' );
-	wp_enqueue_style( 'flat-icons' ); // Enqueue it!
+	// wp_register_style( 'flat-icons', get_template_directory_uri() . '/assets/icons/flat-icon/font/flaticon.css' );
+	// wp_enqueue_style( 'flat-icons' ); // Enqueue it!
 
-	wp_register_style( 'fontello', get_template_directory_uri() . '/assets/icons/fontello/css/fontello.css' );
-	wp_enqueue_style( 'fontello' ); // Enqueue it!
+	// wp_register_style( 'fontello', get_template_directory_uri() . '/assets/icons/fontello/css/fontello.css' );
+	// wp_enqueue_style( 'fontello' ); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation

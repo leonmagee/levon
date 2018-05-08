@@ -1,1 +1,1202 @@
-header.header .header-inner .nav ul li a,header.header .header-inner .site-title{font-family:Cantarell,sans-serif;font-weight:700;font-style:italic}footer.footer,header.header{background-image:url(../img/bgs/rebel_@2X.png);background-size:320px 360px}.two-items-wrap h4,body article.single h1,footer.footer,h1.solid-bg{text-transform:uppercase}header.header{background-color:#222}@media (min-width:640px){header.header .header-inner{display:flex;align-items:center;justify-content:space-between}header.header .header-inner .site-title{flex:1}}header.header .header-inner .site-title{font-size:3.5em;text-transform:uppercase}@media (max-width:767px){header.header .header-inner .site-title{text-align:center}header.header .header-inner .site-title .site-title-inner{display:inline-block}}header.header .header-inner .site-title a{color:#EFE9F4;display:flex;align-items:center}header.header .header-inner .site-title a .logo{margin:0 3px;color:#FFF!important}header.header .header-inner .site-title a .logo_1{color:#00487C}header.header .header-inner .site-title a .logo_2{color:#EFE9F4}header.header .header-inner .site-title a .logo_3{color:#08B2E3;font-size:1.3em}header.header .header-inner .site-title a .logo_4{color:#57A773}header.header .header-inner .site-title a .logo_5{color:#484D6D}header.header .header-inner .nav ul{display:flex;color:#FFF;font-size:2em;list-style-type:none}@media (max-width:767px){header.header .header-inner .nav ul{background-color:rgba(255,255,255,.05);justify-content:center;padding:10px 0;margin-top:5px;margin-bottom:0}}header.header .header-inner .nav ul li{margin:0 15px}header.header .header-inner .nav ul li a{color:#FFF}body a,header.header .header-inner .nav ul li a:hover{color:#08B2E3}body{background-color:#FAFAFA;font-family:Lato,sans-serif;font-weight:400}body .wrapper h1,body .wrapper h2,body .wrapper h3,body .wrapper h4,body .wrapper h5,footer.footer{font-family:Cantarell,sans-serif;font-weight:700}body a:hover{color:#27c9f7}body article.single{font-size:17px;background-color:#FFF;border:1px solid #EEE;padding:0 10px 10px;margin-top:20px}body article.single h1{margin-top:5px}body article.single h1 a{color:#222}body article.single .content-wrap{padding:10px 5px}body .wrapper{display:flex;flex-direction:column;min-height:100vh}body .wrapper .max-width-wrap{max-width:1100px;margin:0 auto}body .wrapper .inner-wrapper{width:100%;height:100%;flex:1;display:flex}body .wrapper main{flex:1}body .wrapper .coming-soon-message{font-size:6em;color:#222;height:80vh;display:flex;align-items:center;justify-content:center}body .page-content{font-size:18px;padding:0 15px}.tos-caption{display:none}.pushbottom{clear:both}h1.solid-bg{text-align:center;background-color:#08B2E3;color:#F7F7F7;padding:15px 10px;margin-bottom:0;margin-top:0}footer.footer{background-color:#222;color:#FFF;text-align:center;margin-top:auto;padding:20px 0}footer.footer div.copyright{opacity:.8}.hompage-image-wrap{background:url(../img/city.jpg) red;background-size:cover;flex:1;border-top:1px solid #333;border-bottom:1px solid #333;display:flex;justify-content:center;align-items:center}.hompage-image-wrap .homepage-large-text{text-align:center;padding:10px;text-shadow:1px 1px rgba(0,0,0,.2)}.hompage-image-wrap .homepage-large-text h1{font-size:3em;line-height:1.3em;color:#FFF;margin:0}@media (min-width:640px){.hompage-image-wrap .homepage-large-text h1{font-size:6em;line-height:1.3em}}.hompage-image-wrap .homepage-large-text p{font-family:Lato,sans-serif;font-weight:400;color:#EEE;font-size:1.5em}.homepage-outer-tutorial{padding-bottom:45px;width:100%}.homepage-outer-tutorial .tutorial-homepage-wrap{position:relative;margin:15px}@media (min-width:640px){.hompage-image-wrap .homepage-large-text p{font-size:3.5em}.homepage-outer-tutorial{display:flex;justify-content:space-between}.homepage-outer-tutorial a{flex:0 1 32%}.homepage-outer-tutorial .tutorial-homepage-wrap{margin:15px 0 0}}.homepage-outer-tutorial .tutorial-homepage-wrap .title-wrap{position:absolute;z-index:100;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background-color:rgba(0,0,0,.3)}.projects-wrap,.projects-wrap .project-item-wrap{position:relative}.homepage-outer-tutorial .tutorial-homepage-wrap .title-wrap:hover{background-color:transparent}.homepage-outer-tutorial .tutorial-homepage-wrap .title-wrap h2{font-size:20px;padding:0 10px;color:#FFF;text-align:center}.projects-wrap{margin:0 auto}@media (min-width:640px){.homepage-outer-tutorial .tutorial-homepage-wrap .title-wrap h2{font-size:29px}.projects-wrap{display:grid;grid-template-columns:repeat(2,1fr)}}@media (min-width:1024px){.projects-wrap{display:grid;grid-template-columns:repeat(4,1fr)}}.projects-wrap .project-item-wrap .project-title h2{color:#222;background-color:rgba(0,0,0,.08);text-align:center;font-size:30px;margin:0;padding:4px 0}.projects-wrap .project-item-wrap .project-image img{border:1px solid #EEE}.projects-wrap .project-item-wrap .hover-shade{position:absolute;z-index:1000;width:100%;height:100%;background-color:rgba(8,178,227,.4);display:none;align-items:center;justify-content:center}.projects-wrap .project-item-wrap:hover .hover-shade,technologies{display:flex}.projects-wrap .project-item-wrap .hover-shade .extra-info{font-family:Cantarell,sans-serif;font-weight:700;font-style:italic;color:#333;font-size:14px;padding:10px;background-color:#FFF;border:2px solid #08B2E3;width:80%;height:74%}.projects-wrap .project-item-wrap:hover{opacity:.9}.projects-wrap .project-item-wrap a:hover{cursor:pointer}@media (min-width:640px){.projects-wrap .project-item-wrap .hover-shade .extra-info{font-size:18px}.project-single .project-single-header{display:flex}.project-single .project-single-header .project-bio{flex:1 1 80%}}.project-single .project-single-header .project-bio{font-size:17px;padding:0 15px}.project-single .project-single-header .tech .tech-inner{background:#FAFAFA;border-left:1px solid #EEE;border-right:1px solid #EEE;border-bottom:1px solid #EEE;padding-top:15px}.project-single .project-single-header .tech h3{background-color:#00487C;font-size:14px;padding:5px 10px;color:#F7F7F7;margin-top:20px;margin-bottom:0}@media (min-width:640px){.project-single .project-single-header .tech{flex:1 1 20%}.project-single .project-gallery{display:flex;padding:10px 15px;flex-wrap:wrap;justify-content:space-between}}.project-single .project-gallery .gallery-image{padding:30px}@media (min-width:640px){.project-single .project-gallery .gallery-image{flex:0 1 32%;padding:0;margin-bottom:28px}}.project-single .project-gallery .gallery-image a img{border:1px solid #EEE}.project-single .project-gallery .gallery-image a:hover{opacity:.85}.project-single .project-gallery .gallery-image a:hover img{border-color:#58d5f9}technologies{justify-content:space-between;align-items:center;flex-wrap:wrap}technologies .tech-item{text-align:center;flex:0 1 20%;position:relative;min-height:80px}technologies .tech-item .tech-icon i:before{line-height:1em;font-size:37px;margin:0;color:#00487C}@media (min-width:640px){technologies .tech-item{min-height:130px}technologies .tech-item .tech-icon i:before{font-size:60px}}technologies .tech-item .tech-name{display:none;position:absolute;width:100%;background:#00487C;color:#FFF;padding:3px 2px;font-size:10px;margin-top:7px;font-family:Cantarell,sans-serif;font-weight:700}code,special{font-family:Lato,sans-serif}technologies .tech-item:hover .tech-name{display:block}.project-single-header .tech technologies{padding:0 10px;justify-content:flex-start}.project-single-header .tech technologies .tech-item{flex:0 1 33%;min-height:80px}.project-single-header .tech technologies .tech-item .tech-icon i:before{line-height:1em;font-size:42px}.homepage-tech-icons{padding:30px 0 20px}.single-tutorial h3{-webkit-margin-before:0;-webkit-margin-after:0;margin:20px 0 5px}.single-tutorial p{-webkit-margin-before:0;-webkit-margin-after:0;padding-left:1px}code{font-weight:700;color:#00487C}special{font-weight:400;font-style:italic;color:#999;margin-left:5px}.basic-repsponsive-layout footer,.basic-repsponsive-layout header,.flexbox-example,nav.flexbox-menu-example ul li a{color:#FFF;font-family:Cantarell,sans-serif;font-weight:700}.two-items-wrap h4{margin:7px 0;font-size:17px}.two-items-wrap p{margin:0}.two-items-wrap .crayon-syntax{margin:0!important}.two-items-wrap .inner-item{padding:15px}@media (min-width:640px){.two-items-wrap{display:flex}.two-items-wrap .inner-item{flex:0 1 50%}}.two-items-wrap .inner-item.more-padding{padding-top:52px}.flexbox-example{background-color:#08B2E3;height:100%;font-size:26px}.flexbox-example .flexbox-wrapper{display:flex;justify-content:center;align-items:center;height:100%;min-height:120px}nav.flexbox-menu-example{background:#484D6D}nav.flexbox-menu-example ul{list-style-type:none;padding:0;margin:0;display:flex}nav.flexbox-menu-example ul.flex-end{justify-content:flex-end}nav.flexbox-menu-example ul.center{justify-content:center}nav.flexbox-menu-example ul.space-around{justify-content:space-around}nav.flexbox-menu-example ul.space-between{justify-content:space-between}nav.flexbox-menu-example ul li{background:#08B2E3}nav.flexbox-menu-example ul li a{padding:10px;display:block;text-decoration:none}nav.flexbox-menu-example ul li a:hover{background:#0ec2f7;cursor:pointer}.basic-repsponsive-layout .container>*{padding:10px}.basic-repsponsive-layout footer,.basic-repsponsive-layout header{background:#08B2E3}.basic-repsponsive-layout footer{font-size:12px}.basic-repsponsive-layout .container{font-family:sans-serif;display:flex;flex-direction:column;height:100%;border:1px solid #DDD}.basic-repsponsive-layout .content{flex:1}.basic-repsponsive-layout .content.with-sidebar{margin-bottom:auto;display:flex}@media (max-width:640px){.basic-repsponsive-layout .content.with-sidebar{flex-direction:column-reverse}}.basic-repsponsive-layout .content.with-sidebar .sidebar{padding-right:35px}.basic-repsponsive-layout .content.with-sidebar .text{padding-top:15px}.tutorials-archive{font-size:19px;padding:0 15px}.tutorials-archive p{margin-top:10px;margin-left:5px;padding-bottom:20px;border-bottom:1px solid #E3E3E3}.tutorials-archive h2{margin-bottom:0}.tutorials-archive h2 a{color:#00487C}.tutorials-archive h2 a:hover{color:#003963}.tutorial-sample-image{padding:15px;text-align:center}.tutorial-sample-image img{border:1px solid #EEE}.quizian .quizian-input{width:600px;margin:10px}.quizian .quizian-input input{width:100%;font-size:16px;padding:8px 15px}.quizian .quizian-input select{width:150px;font-size:16px;padding:8px 15px}.quizian .quizian-input button{font-size:16px;padding:8px 15px;background-color:#08B2E3;color:#FFF;border:none;border-radius:5px}.quizian .quizian-input button:hover{background-color:#079fca}
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent; }
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap; }
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+	Theme Name: Levon.io
+	Theme URI: http://levon.io
+	Description: Custom WordPress Theme
+	Version: 1.0.0
+	Author: Leon Magee
+	Author URI: http://levon.io
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+/*------------------------------------*    MAIN
+\*------------------------------------*/
+/* global box-sizing */
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+/* html element 62.5% font-size for REM use */
+html {
+  font-size: 62.5%; }
+
+body {
+  font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #444; }
+
+/* clear */
+.clear:before,
+.clear:after {
+  content: ' ';
+  display: table; }
+
+.clear:after {
+  clear: both; }
+
+.clear {
+  *zoom: 1; }
+
+img {
+  max-width: 100%;
+  vertical-align: bottom; }
+
+a {
+  color: #444;
+  text-decoration: none; }
+
+a:hover {
+  color: #444; }
+
+a:focus {
+  outline: 0; }
+
+a:hover,
+a:active {
+  outline: 0; }
+
+input:focus {
+  outline: 0;
+  border: 1px solid #04A4CC; }
+
+/*------------------------------------*    STRUCTURE
+\*------------------------------------*/
+/* wrapper */
+.wrapper {
+  /*max-width:1280px;*/
+  /*width:95%;*/
+  /*margin:0 auto;*/
+  position: relative; }
+
+/* header */
+/* logo */
+/* nav */
+/* sidebar */
+/* footer */
+/*------------------------------------*    PAGES
+\*------------------------------------*/
+/*------------------------------------*    IMAGES
+\*------------------------------------*/
+/*------------------------------------*	TYPOGRAPHY
+\*------------------------------------*/
+@font-face {
+  font-family: 'Font-Name';
+  src: url("fonts/font-name.eot");
+  src: url("fonts/font-name.eot?#iefix") format("embedded-opentype"), url("fonts/font-name.woff") format("woff"), url("fonts/font-name.ttf") format("truetype"), url("fonts/font-name.svg#font-name") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/*------------------------------------*    RESPONSIVE
+\*------------------------------------*/
+/*------------------------------------*    MISC
+\*------------------------------------*/
+::selection {
+  background: #04A4CC;
+  color: #FFF;
+  text-shadow: none; }
+
+::-webkit-selection {
+  background: #04A4CC;
+  color: #FFF;
+  text-shadow: none; }
+
+::-moz-selection {
+  background: #04A4CC;
+  color: #FFF;
+  text-shadow: none; }
+
+/*------------------------------------*    WORDPRESS CORE
+\*------------------------------------*/
+.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+a img.alignnone {
+  margin: 5px 20px 20px 0; }
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.wp-caption {
+  background: #FFF;
+  border: 1px solid #F0F0F0;
+  max-width: 96%;
+  padding: 5px 3px 10px;
+  text-align: center; }
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px; }
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto; }
+
+.wp-caption .wp-caption-text,
+.gallery-caption {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px; }
+
+/*------------------------------------*    PRINT
+\*------------------------------------*/
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  a,
+  a:visited {
+    text-decoration: underline; }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  thead {
+    display: table-header-group; }
+  tr, img {
+    page-break-inside: avoid; }
+  img {
+    max-width: 100% !important; }
+  @page {
+    margin: 0.5cm; }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+
+/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 28/02/2017 19:50
+  	*/
+@font-face {
+  font-family: "Flaticon";
+  src: url("../icons/flat-icon/font/Flaticon.eot");
+  src: url("../icons/flat-icon/font/Flaticon.eot?#iefix") format("embedded-opentype"), url("../icons/flat-icon/font/Flaticon.woff") format("woff"), url("../icons/flat-icon/font/Flaticon.ttf") format("truetype"), url("../icons/flat-icon/font/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../icons/flat-icon/font/Flaticon.svg#Flaticon") format("svg"); } }
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-size: 20px;
+  font-style: normal;
+  margin-left: 20px; }
+
+.flaticon-computer:before {
+  content: "\f100"; }
+
+.flaticon-social:before {
+  content: "\f101"; }
+
+.flaticon-git-logo:before {
+  content: "\f102"; }
+
+.flaticon-css-3-logo:before {
+  content: "\f103"; }
+
+.flaticon-internet:before {
+  content: "\f104"; }
+
+/* html 5 */
+
+@charset "UTF-8";
+@font-face {
+  font-family: 'fontello';
+  src: url("../icons/fontello/font/fontello.eot?36118957");
+  src: url("../icons/fontello/font/fontello.eot?36118957#iefix") format("embedded-opentype"), url("../icons/fontello/font/fontello.woff2?36118957") format("woff2"), url("../icons/fontello/font/fontello.woff?36118957") format("woff"), url("../icons/fontello/font/fontello.ttf?36118957") format("truetype"), url("../icons/fontello/font/fontello.svg?36118957#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?36118957#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-jquery:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-javascript:before {
+  content: '\e801'; }
+
+/* '' */
+.icon-laravel:before {
+  content: '\e802'; }
+
+/* '' */
+.icon-php:before {
+  content: '\e803'; }
+
+/* '' */
+.icon-react:before {
+  content: '\e804'; }
+
+/* '' */
+
+/**
+* Import SCSS files
+*/
+@import url("https://fonts.googleapis.com/css?family=Cantarell:700,700i|Lato:400,400i,700");
+/**
+* Regular Font
+**/
+/**
+* Header Fonts
+**/
+/**
+* Backgrounds
+**/
+header.header {
+  background-color: #222;
+  background-image: url("../img/bgs/rebel_@2X.png");
+  background-size: 320px 360px; }
+  @media (min-width: 640px) {
+    header.header .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; } }
+  header.header .header-inner .site-title {
+    font-family: 'Cantarell', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 3.5em;
+    text-transform: uppercase; }
+    @media (max-width: 767px) {
+      header.header .header-inner .site-title {
+        text-align: center; }
+        header.header .header-inner .site-title .site-title-inner {
+          display: inline-block; } }
+    @media (min-width: 640px) {
+      header.header .header-inner .site-title {
+        flex: 1; } }
+    header.header .header-inner .site-title a {
+      color: #EFE9F4;
+      display: flex;
+      align-items: center; }
+      header.header .header-inner .site-title a .logo {
+        margin: 0 3px;
+        color: #FFF !important; }
+      header.header .header-inner .site-title a .logo_1 {
+        color: #00487C; }
+      header.header .header-inner .site-title a .logo_2 {
+        color: #EFE9F4; }
+      header.header .header-inner .site-title a .logo_3 {
+        color: #08B2E3;
+        font-size: 1.3em; }
+      header.header .header-inner .site-title a .logo_4 {
+        color: #57A773; }
+      header.header .header-inner .site-title a .logo_5 {
+        color: #484D6D; }
+  header.header .header-inner .nav ul {
+    display: flex;
+    color: #FFF;
+    font-size: 2em;
+    list-style-type: none; }
+    @media (max-width: 767px) {
+      header.header .header-inner .nav ul {
+        background-color: rgba(255, 255, 255, 0.05);
+        justify-content: center;
+        padding: 10px 0;
+        margin-top: 5px;
+        margin-bottom: 0; } }
+    header.header .header-inner .nav ul li {
+      margin: 0 15px; }
+      header.header .header-inner .nav ul li a {
+        color: #FFF;
+        font-family: 'Cantarell', sans-serif;
+        font-weight: 700;
+        font-style: italic; }
+        header.header .header-inner .nav ul li a:hover {
+          color: #08B2E3; }
+
+body {
+  background-color: #FAFAFA;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400; }
+  body a {
+    color: #08B2E3; }
+    body a:hover {
+      color: #27c9f7; }
+  body article.single {
+    font-size: 17px;
+    background-color: #FFF;
+    border: 1px solid #EEE;
+    padding: 0 10px 10px;
+    margin-top: 20px; }
+    body article.single h1 {
+      margin-top: 5px;
+      text-transform: uppercase; }
+      body article.single h1 a {
+        color: #222; }
+    body article.single .content-wrap {
+      padding: 10px 5px; }
+  body .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; }
+    body .wrapper .max-width-wrap {
+      max-width: 1100px;
+      margin: 0 auto; }
+    body .wrapper .inner-wrapper {
+      width: 100%;
+      height: 100%;
+      flex: 1;
+      display: flex; }
+    body .wrapper main {
+      flex: 1; }
+    body .wrapper h1, body .wrapper h2, body .wrapper h3, body .wrapper h4, body .wrapper h5 {
+      font-family: 'Cantarell', sans-serif;
+      font-weight: 700; }
+    body .wrapper .coming-soon-message {
+      font-size: 6em;
+      color: #222;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  body .page-content {
+    font-size: 18px;
+    padding: 0 15px; }
+
+.tos-caption {
+  display: none; }
+
+.pushbottom {
+  clear: both; }
+
+h1.solid-bg {
+  text-align: center;
+  background-color: #08B2E3;
+  color: #F7F7F7;
+  padding: 15px 10px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 0; }
+
+footer.footer {
+  background-color: #222;
+  background-image: url("../img/bgs/rebel_@2X.png");
+  background-size: 320px 360px;
+  color: #FFF;
+  font-family: 'Cantarell', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: auto;
+  padding: 20px 0; }
+  footer.footer div.copyright {
+    opacity: 0.8; }
+
+.hompage-image-wrap {
+  background: #222;
+  background-image: url("../img/city.jpg");
+  background-size: cover;
+  flex: 1;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hompage-image-wrap .homepage-large-text {
+    text-align: center;
+    padding: 10px 10px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2); }
+    .hompage-image-wrap .homepage-large-text h1 {
+      font-size: 3em;
+      line-height: 1.3em;
+      color: #FFF;
+      margin: 0; }
+      @media (min-width: 640px) {
+        .hompage-image-wrap .homepage-large-text h1 {
+          font-size: 6em;
+          line-height: 1.3em; } }
+    .hompage-image-wrap .homepage-large-text p {
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      color: #EEE;
+      font-size: 1.5em; }
+      @media (min-width: 640px) {
+        .hompage-image-wrap .homepage-large-text p {
+          font-size: 3.5em; } }
+
+.homepage-outer-tutorial {
+  padding-bottom: 45px;
+  width: 100%; }
+  @media (min-width: 640px) {
+    .homepage-outer-tutorial {
+      display: flex;
+      justify-content: space-between; } }
+  @media (min-width: 640px) {
+    .homepage-outer-tutorial a {
+      flex: 0 1 32%; } }
+  .homepage-outer-tutorial .tutorial-homepage-wrap {
+    position: relative;
+    margin: 15px; }
+    @media (min-width: 640px) {
+      .homepage-outer-tutorial .tutorial-homepage-wrap {
+        margin: 15px 0 0; } }
+    .homepage-outer-tutorial .tutorial-homepage-wrap .title-wrap {
+      position: absolute;
+      z-index: 100;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.3); }
+      .homepage-outer-tutorial .tutorial-homepage-wrap .title-wrap:hover {
+        background-color: transparent; }
+      .homepage-outer-tutorial .tutorial-homepage-wrap .title-wrap h2 {
+        font-size: 20px;
+        padding: 0 10px;
+        color: #FFF;
+        text-align: center; }
+        @media (min-width: 640px) {
+          .homepage-outer-tutorial .tutorial-homepage-wrap .title-wrap h2 {
+            font-size: 29px; } }
+
+.projects-wrap {
+  background-color: #DDD;
+  height: 100%;
+  position: relative;
+  margin: 0 auto; }
+  @media (min-width: 640px) {
+    .projects-wrap {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1024px) {
+    .projects-wrap {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); } }
+  .projects-wrap .project-item-wrap {
+    position: relative;
+    background-size: cover; }
+    .projects-wrap .project-item-wrap .project-title h2 {
+      color: #222;
+      background-color: rgba(0, 0, 0, 0.08);
+      text-align: center;
+      font-size: 30px;
+      margin: 0;
+      padding: 4px 0; }
+    .projects-wrap .project-item-wrap .project-image {
+      position: relative; }
+    .projects-wrap .project-item-wrap .hover-shade {
+      position: absolute;
+      z-index: 1000;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(8, 178, 227, 0.4);
+      display: none;
+      align-items: center;
+      justify-content: center; }
+      .projects-wrap .project-item-wrap .hover-shade .extra-info {
+        font-family: 'Cantarell', sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        color: #333;
+        font-size: 14px;
+        padding: 10px;
+        background-color: #FFF;
+        border: 2px solid #08B2E3;
+        width: 80%;
+        height: 74%; }
+        @media (min-width: 640px) {
+          .projects-wrap .project-item-wrap .hover-shade .extra-info {
+            font-size: 14px; } }
+    .projects-wrap .project-item-wrap:hover {
+      opacity: 0.9; }
+      .projects-wrap .project-item-wrap:hover .hover-shade {
+        display: flex; }
+    .projects-wrap .project-item-wrap a:hover {
+      cursor: pointer; }
+
+@media (min-width: 640px) {
+  .project-single .project-single-header {
+    display: flex; } }
+
+.project-single .project-single-header .project-bio {
+  font-size: 17px;
+  padding: 0 15px; }
+  @media (min-width: 640px) {
+    .project-single .project-single-header .project-bio {
+      flex: 1 1 80%; } }
+
+@media (min-width: 640px) {
+  .project-single .project-single-header .tech {
+    flex: 1 1 20%; } }
+
+.project-single .project-single-header .tech .tech-inner {
+  background: #FAFAFA;
+  border-left: 1px solid #EEE;
+  border-right: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+  padding-top: 15px; }
+
+.project-single .project-single-header .tech h3 {
+  background-color: #00487C;
+  font-size: 14px;
+  padding: 5px 10px;
+  color: #F7F7F7;
+  margin-top: 20px;
+  margin-bottom: 0; }
+
+@media (min-width: 640px) {
+  .project-single .project-gallery {
+    display: flex;
+    padding: 10px 15px;
+    flex-wrap: wrap;
+    justify-content: space-between; } }
+
+.project-single .project-gallery .gallery-image {
+  padding: 30px; }
+  @media (min-width: 640px) {
+    .project-single .project-gallery .gallery-image {
+      flex: 0 1 32%;
+      padding: 0;
+      margin-bottom: 28px; } }
+  .project-single .project-gallery .gallery-image a img {
+    border: 1px solid #EEE; }
+  .project-single .project-gallery .gallery-image a:hover {
+    opacity: 0.85; }
+    .project-single .project-gallery .gallery-image a:hover img {
+      border-color: #58d5f9; }
+
+/**
+* General Styles
+* Following this are location specific styles
+**/
+technologies {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+  technologies .tech-item {
+    text-align: center;
+    flex: 0 1 20%;
+    position: relative;
+    min-height: 80px; }
+    @media (min-width: 640px) {
+      technologies .tech-item {
+        min-height: 130px; } }
+    technologies .tech-item .tech-icon i:before {
+      line-height: 1em;
+      font-size: 37px;
+      margin: 0;
+      color: #00487C; }
+      @media (min-width: 640px) {
+        technologies .tech-item .tech-icon i:before {
+          font-size: 60px; } }
+    technologies .tech-item .tech-name {
+      display: none;
+      position: absolute;
+      width: 100%;
+      background: #00487C;
+      color: #FFF;
+      padding: 3px 2px;
+      font-size: 10px;
+      margin-top: 7px;
+      font-family: 'Cantarell', sans-serif;
+      font-weight: 700; }
+    technologies .tech-item:hover .tech-name {
+      display: block; }
+
+.project-single-header .tech technologies {
+  padding: 0 10px;
+  justify-content: flex-start; }
+  .project-single-header .tech technologies .tech-item {
+    flex: 0 1 33%;
+    min-height: 80px; }
+    .project-single-header .tech technologies .tech-item .tech-icon i:before {
+      line-height: 1em;
+      font-size: 42px; }
+
+.homepage-tech-icons {
+  padding: 30px 0 20px; }
+
+.single-tutorial h3 {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  margin: 20px 0 5px; }
+
+.single-tutorial p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  padding-left: 1px; }
+
+code {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #00487C; }
+
+special {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #999;
+  margin-left: 5px; }
+
+.two-items-wrap h4 {
+  margin: 7px 0;
+  text-transform: uppercase;
+  font-size: 17px; }
+
+.two-items-wrap p {
+  margin: 0; }
+
+.two-items-wrap .crayon-syntax {
+  margin: 0 !important; }
+
+@media (min-width: 640px) {
+  .two-items-wrap {
+    display: flex; } }
+
+.two-items-wrap .inner-item {
+  padding: 15px; }
+  @media (min-width: 640px) {
+    .two-items-wrap .inner-item {
+      flex: 0 1 50%; } }
+  .two-items-wrap .inner-item.more-padding {
+    padding-top: 52px; }
+
+.flexbox-example {
+  background-color: #08B2E3;
+  font-family: 'Cantarell', sans-serif;
+  font-weight: 700;
+  color: #FFF;
+  height: 100%;
+  font-size: 26px; }
+  .flexbox-example .flexbox-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 120px; }
+
+nav.flexbox-menu-example {
+  background: #484D6D; }
+  nav.flexbox-menu-example ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; }
+    nav.flexbox-menu-example ul.flex-end {
+      justify-content: flex-end; }
+    nav.flexbox-menu-example ul.center {
+      justify-content: center; }
+    nav.flexbox-menu-example ul.space-around {
+      justify-content: space-around; }
+    nav.flexbox-menu-example ul.space-between {
+      justify-content: space-between; }
+    nav.flexbox-menu-example ul li {
+      background: #08B2E3; }
+      nav.flexbox-menu-example ul li a {
+        padding: 10px;
+        display: block;
+        font-family: 'Cantarell', sans-serif;
+        font-weight: 700;
+        color: #FFF;
+        text-decoration: none; }
+        nav.flexbox-menu-example ul li a:hover {
+          background: #0ec2f7;
+          cursor: pointer; }
+
+.basic-repsponsive-layout .container > * {
+  padding: 10px; }
+
+.basic-repsponsive-layout header, .basic-repsponsive-layout footer {
+  background: #08B2E3;
+  color: #FFF;
+  font-family: 'Cantarell', sans-serif;
+  font-weight: 700; }
+
+.basic-repsponsive-layout footer {
+  font-size: 12px; }
+
+.basic-repsponsive-layout .container {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #DDD; }
+
+.basic-repsponsive-layout .content {
+  flex: 1; }
+  .basic-repsponsive-layout .content.with-sidebar {
+    margin-bottom: auto;
+    display: flex; }
+    @media (max-width: 640px) {
+      .basic-repsponsive-layout .content.with-sidebar {
+        flex-direction: column-reverse; } }
+    .basic-repsponsive-layout .content.with-sidebar .sidebar {
+      padding-right: 35px; }
+    .basic-repsponsive-layout .content.with-sidebar .text {
+      padding-top: 15px; }
+
+.tutorials-archive {
+  font-size: 19px;
+  padding: 0 15px; }
+  .tutorials-archive p {
+    margin-top: 10px;
+    margin-left: 5px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E3E3E3; }
+  .tutorials-archive h2 {
+    margin-bottom: 0; }
+    .tutorials-archive h2 a {
+      color: #00487C; }
+      .tutorials-archive h2 a:hover {
+        color: #003963; }
+
+.tutorial-sample-image {
+  padding: 15px;
+  text-align: center; }
+  .tutorial-sample-image img {
+    border: 1px solid #EEE; }
+
+.quizian .quizian-input {
+  width: 600px;
+  margin: 10px; }
+  .quizian .quizian-input input {
+    width: 100%;
+    font-size: 16px;
+    padding: 8px 15px; }
+  .quizian .quizian-input select {
+    width: 150px;
+    font-size: 16px;
+    padding: 8px 15px; }
+  .quizian .quizian-input button {
+    font-size: 16px;
+    padding: 8px 15px;
+    background-color: #08B2E3;
+    color: #FFF;
+    border: none;
+    border-radius: 5px; }
+    .quizian .quizian-input button:hover {
+      background-color: #079fca; }
