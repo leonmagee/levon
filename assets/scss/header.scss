@@ -50,26 +50,53 @@ header.header {
       }
     }
     .nav {
+      height: 100%;
 
       ul {
         display: flex;
         color: #FFF;
         font-size: 2em;
         list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        height: 100%;
         @media(max-width: 767px) {
           background-color: rgba(255,255,255,0.05);
-          justify-content: center;
-          padding: 10px 0;
-          margin-top: 5px;
-          margin-bottom: 0;
+          background-color: red;
+          justify-content: space-between;
+          // padding: 10px 0;
+          // margin-top: 5px;
+          // margin-bottom: 0;
         }
         li {
           margin: 0 15px;
+          height: 100%;
+          @media(max-width: 767px) {
+            margin: 0;
+          }
           a {
             color: #FFF;
+            padding: 20px 15px 20px 10px;
+            height: 100%;
+            //height: 100px;
+            display: block;
             @include cantarell_bold_italic;
+            @media(max-width: 767px) {
+              font-size: 0.8em;
+              padding: 15px 15px 15px 10px;
+            }
             &:hover {
               color: $brand-primary;
+              //background: red;
+            }
+          }
+          &.current-menu-item {
+            a {
+              background: $brand-primary;
+              &:hover {
+                color: #FFF;
+              }
             }
           }
         }
