@@ -728,7 +728,6 @@ header.header {
       @media (max-width: 767px) {
         header.header .header-inner .nav ul {
           background-color: rgba(255, 255, 255, 0.05);
-          background-color: red;
           justify-content: space-between; } }
       header.header .header-inner .nav ul li {
         margin: 0 15px;
@@ -919,6 +918,10 @@ footer.footer {
     min-height: 300px;
     background-size: cover;
     background-position: center; }
+    @media (min-width: 640px) {
+      .projects-wrap .project-item-wrap {
+        border-right: 1px solid rgba(0, 0, 0, 0.07);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.07); } }
     .projects-wrap .project-item-wrap .project-title h2 {
       color: #222;
       background-color: rgba(0, 0, 0, 0.08);
