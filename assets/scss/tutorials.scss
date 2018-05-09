@@ -1,15 +1,8 @@
-// this can be called blog formatting instead
-// if I'm going to be making general blog posts that are not tutorials?
-
-.crayon-syntax {
-  //max-width: 500px;
-  //margin: 0 auto;
-}
+// .crayon-syntax {
+// }
 
 .single-tutorial {
   h3 {
-    //margin: 100px !important;
-    //margin-bottom: -15px !important;
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
     margin: 20px 0 5px;
@@ -42,7 +35,6 @@ special {
     margin: 0;
   }
   .crayon-syntax {
-    //margin: 0 0 1px !important;
     margin: 0 !important;
   }
   @media(min-width: $screen-sm) {
@@ -154,6 +146,11 @@ nav.flexbox-menu-example {
       }
     }
   }
+}
+
+.tutorials-outer {
+  background: #455;
+  width: 100%;
 }
 
 // tutorials archive

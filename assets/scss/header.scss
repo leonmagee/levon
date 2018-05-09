@@ -1,6 +1,8 @@
 header.header {
   //@include moulin_bg;
-  @include rebel_bg;
+  //@include rebel_bg;
+  //@include lodyas_bg;
+  @include dark_triangles;
   .header-inner {
 
     @media(min-width: $screen-sm) {

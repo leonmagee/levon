@@ -675,8 +675,8 @@ a img.aligncenter {
 **/
 header.header {
   background-color: #222;
-  background-image: url("../img/bgs/rebel_@2X.png");
-  background-size: 320px 360px; }
+  background-image: url("../img/bgs/dark-triangles-darker.png");
+  background-size: 200px 200px; }
   @media (min-width: 640px) {
     header.header .header-inner {
       display: flex;
@@ -818,10 +818,14 @@ h1.solid-bg {
   margin-bottom: 0;
   margin-top: 0; }
 
+.new-max-width {
+  max-width: 1100px;
+  margin: 0 auto; }
+
 footer.footer {
   background-color: #222;
-  background-image: url("../img/bgs/rebel_@2X.png");
-  background-size: 320px 360px;
+  background-image: url("../img/bgs/dark-triangles-darker.png");
+  background-size: 200px 200px;
   color: #FFF;
   font-family: 'Cantarell', sans-serif;
   font-weight: 700;
@@ -863,42 +867,6 @@ footer.footer {
       @media (min-width: 640px) {
         .hompage-image-wrap .homepage-large-text p {
           font-size: 3.5em; } }
-
-.homepage-outer-tutorial {
-  padding-bottom: 45px;
-  width: 100%; }
-  @media (min-width: 640px) {
-    .homepage-outer-tutorial {
-      display: flex;
-      justify-content: space-between; } }
-  @media (min-width: 640px) {
-    .homepage-outer-tutorial a {
-      flex: 0 1 32%; } }
-  .homepage-outer-tutorial .tutorial-homepage-wrap {
-    position: relative;
-    margin: 15px; }
-    @media (min-width: 640px) {
-      .homepage-outer-tutorial .tutorial-homepage-wrap {
-        margin: 15px 0 0; } }
-    .homepage-outer-tutorial .tutorial-homepage-wrap .title-wrap {
-      position: absolute;
-      z-index: 100;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: rgba(0, 0, 0, 0.3); }
-      .homepage-outer-tutorial .tutorial-homepage-wrap .title-wrap:hover {
-        background-color: transparent; }
-      .homepage-outer-tutorial .tutorial-homepage-wrap .title-wrap h2 {
-        font-size: 20px;
-        padding: 0 10px;
-        color: #FFF;
-        text-align: center; }
-        @media (min-width: 640px) {
-          .homepage-outer-tutorial .tutorial-homepage-wrap .title-wrap h2 {
-            font-size: 29px; } }
 
 .projects-wrap {
   background-color: #DDD;
@@ -1181,6 +1149,10 @@ nav.flexbox-menu-example {
     .basic-repsponsive-layout .content.with-sidebar .text {
       padding-top: 15px; }
 
+.tutorials-outer {
+  background: #455;
+  width: 100%; }
+
 .tutorials-archive {
   font-size: 19px;
   padding: 0 15px; }
@@ -1201,6 +1173,51 @@ nav.flexbox-menu-example {
   text-align: center; }
   .tutorial-sample-image img {
     border: 1px solid #EEE; }
+
+.tutorials-archive-outer {
+  background-color: #455;
+  background-color: #045168;
+  width: 100%;
+  padding-top: 30px; }
+  .tutorials-archive-outer .tutorials-archive-inner {
+    padding-bottom: 45px;
+    width: 100%; }
+    @media (min-width: 640px) {
+      .tutorials-archive-outer .tutorials-archive-inner {
+        display: flex;
+        justify-content: space-between; } }
+    @media (min-width: 640px) {
+      .tutorials-archive-outer .tutorials-archive-inner a {
+        flex: 0 1 32%; } }
+    .tutorials-archive-outer .tutorials-archive-inner .tutorial-homepage-wrap {
+      position: relative;
+      margin: 15px;
+      border: 3px solid #DDD;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 1px 1px rgba(0, 0, 0, 0.2); }
+      @media (min-width: 640px) {
+        .tutorials-archive-outer .tutorials-archive-inner .tutorial-homepage-wrap {
+          margin: 15px 0 0; } }
+      .tutorials-archive-outer .tutorials-archive-inner .tutorial-homepage-wrap .title-wrap {
+        position: absolute;
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.3); }
+        .tutorials-archive-outer .tutorials-archive-inner .tutorial-homepage-wrap .title-wrap:hover {
+          background-color: transparent; }
+        .tutorials-archive-outer .tutorials-archive-inner .tutorial-homepage-wrap .title-wrap h2 {
+          font-size: 20px;
+          padding: 0 10px;
+          color: #FFF;
+          text-align: center; }
+          @media (min-width: 640px) {
+            .tutorials-archive-outer .tutorials-archive-inner .tutorial-homepage-wrap .title-wrap h2 {
+              font-size: 29px; } }
 
 .quizian .quizian-input {
   width: 600px;

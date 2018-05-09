@@ -52,5 +52,18 @@
   background-size: 30px 30px;
 }
 
+@mixin lodyas_bg() {
+  background-color: #222;
+  background-image: url('../img/bgs/footer_lodyas.png');
+  //background-size: 50px 50px;
+  background-size: 500px 500px;
+}
+
+@mixin dark_triangles() {
+  background-color: #222;
+  background-image: url('../img/bgs/dark-triangles-darker.png');
+  //background-size: 50px 50px;
+  background-size: 200px 200px;
+}
 
 

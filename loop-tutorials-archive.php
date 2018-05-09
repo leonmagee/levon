@@ -1,19 +1,32 @@
-<?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>
+<div class="tutorials-archive-outer">
 
-    <!-- article -->
-    <article id="post-<?php the_ID(); ?>" <?php post_class('tutorials-archive'); ?>>
+    <div class="new-max-width">
 
-        <!-- post title -->
-        <h2>
-            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-        </h2>
-        <!-- /post title -->
+        <div class="tutorials-archive-inner">
 
-		<?php html5wp_excerpt( 'html5wp_index', 'tutorial_more_text' ); // Build your custom callback length in functions.php ?>
+            <?php if ( have_posts() ) {
 
-    </article>
-    <!-- /article -->
+                while ( have_posts() ) {
 
-<?php endwhile;
+                    the_post(); ?>
 
-endif;
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="tutorial-homepage-wrap">
+                            <div class="title-wrap">
+                                <h2><?php the_title(); ?></h2>
+                            </div>
+                            <?php if ( has_post_thumbnail() ) {
+                                the_post_thumbnail();
+                            } ?>
+                        </div>
+                    </a>
+
+                <?php }
+
+            } ?>
+
+        </div>
+
+    </div>
+
+</div>

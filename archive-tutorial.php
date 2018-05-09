@@ -1,15 +1,7 @@
-<?php get_header(); ?>
+<?php 
 
-	<main role="main">
-		<!-- section -->
-		<section>
+get_header();
 
-			<h1 class="solid-bg"><?php _e( 'Tutorials', 'html5blank' ); ?></h1>
+get_template_part('loop-tutorials-archive');
 
-			<?php get_template_part('loop-tutorials-archive'); ?>
-
-		</section>
-		<!-- /section -->
-	</main>
-
-<?php get_footer();
+get_footer();

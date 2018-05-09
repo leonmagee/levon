@@ -17,7 +17,6 @@ get_header(); ?>
 		<?php } ?>
 	</div>
 
-
 </div>
 
 <?php get_footer();
