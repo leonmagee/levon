@@ -43,9 +43,3 @@ class tech_loop {
 
 	<?php }
 }
-
-?>
-
-
-
-

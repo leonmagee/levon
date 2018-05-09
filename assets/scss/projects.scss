@@ -1,14 +1,5 @@
-// homepage - archive content
-// @todo refactor this? 
-// @todo I think before I had one for the homepage - one for the archive??
-// careful about single view
+// project archive
 .projects-wrap {
-  //padding: 20px;
-  //display: flex;
-  //flex-wrap: wrap;
-  //flex-direction: row;
-  //justify-content: space-between;
-  //background: cornflowerblue;
   background-color: #DDD;
   min-height: 100%;
   @media(min-width: $screen-sm) {
@@ -42,13 +33,6 @@
         padding: 4px 0;
       }
     }
-    .project-image {
-      position: relative;
-      // img {
-      //   border: 1px solid #EEE;
-      //   //height: 100%;
-      // }
-    }
     .hover-shade {
       position: absolute;
       z-index: 1000;
@@ -58,20 +42,6 @@
       display: none;
       align-items: center;
       justify-content: center;
-      // .extra-info {
-      //   @include cantarell_bold_italic;
-      //   color: #333;
-      //   font-size: 14px;
-      //   padding: 10px;
-      //   background-color: #FFF;
-      //   border: 2px solid $brand-primary;
-      //   width: 80%;
-      //   height: 74%;
-      //   @media(min-width: $screen-sm) {
-      //     //font-size: 18px;
-      //     font-size: 14px;
-      //   }
-      // }
 
       .project-item-circle {
         width: 180px;
@@ -101,44 +71,39 @@
   }
 }
 
+
+// single project
 .project-single {
+  background: $brand-primary-dark;
+  color: #FFF;
+  padding-top: 23px;
 
 
-  // single
-  .project-single-header {
-    @media(min-width: $screen-sm) {
-      display: flex;
-    }
+  .project-single-content {
+    // @media(min-width: $screen-sm) {
+    //   display: flex;
+    // }
+    padding-bottom: 20px;
     .project-bio {
-      //flex: 1 1 100%;
       font-size: 17px;
       padding: 0 15px;
-      @media(min-width: $screen-sm) {
-        flex: 1 1 80%;
-        //padding: 0 5px;
+      text-shadow: 1px 1px rgba(0,0,0,0.1);
+    }
+
+    .visit-link-wrap {
+      a {
+        background: $brand-primary;
+        color: #FFF;
+        text-shadow: 1px 1px rgba(0,0,0,0.1);
+        padding: 5px 15px 6px;
+        border-radius: 4px;
+        font-size: 0.7em;
+        &:hover {
+          background-color: darken( $brand-primary, 3%);
+        }
       }
     }
-    .tech {
-      //flex: 1 1 100%;
-      @media(min-width: $screen-sm) {
-        flex: 1 1 20%;
-      }
-      .tech-inner {
-        background: #FAFAFA;
-        border-left: 1px solid #EEE;
-        border-right: 1px solid #EEE;
-        border-bottom: 1px solid #EEE;
-        padding-top: 15px;
-      }
-      h3 {
-        background-color: $brand-second;
-        font-size: 14px;
-        padding: 5px 10px;
-        color: $bright-white;
-        margin-top: 20px;
-        margin-bottom: 0;
-      }
-    }
+
   }
   .project-gallery {
     @media(min-width: $screen-sm) {
@@ -166,5 +131,54 @@
         }
       }
     }
+  }
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //padding: 0 15px 5px;
+    //padding-bottom: 5px;
+    margin: 0 15px;
+    border-bottom: 1px solid darken($brand-primary, 15%);
+    h1 {
+      flex: 1 1 25%;
+      font-size: 42px;
+      text-shadow: 1px 1px rgba(0,0,0,0.1);
+    }
+    .tech-wrap {
+      flex: 1 1 75%;
+
+      technologies {
+         justify-content: flex-end;
+        .tech-item {
+          min-height: auto;
+          @media(min-width: $screen-md) {
+            flex: 0 1 15%;
+          }
+          .tech-icon {
+            i {
+              &:before {
+                font-size: 30px;
+
+                @media(min-width: $screen-sm) {
+                  font-size: 42px;
+                }
+              }
+              &.fab {
+                &:before {
+                  font-size: 33px;
+
+                  @media(min-width: $screen-sm) {
+                    font-size: 55px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+
   }
 }

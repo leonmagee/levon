@@ -52,6 +52,9 @@ technologies {
       font-size: 10px;
       margin-top: 7px;
       @include cantarell_bold;
+      @media(min-width: $screen-md) {
+        font-size: 13px;
+      }
     }
     &:hover {
       .tech-name {
@@ -61,35 +64,35 @@ technologies {
   }
 }
 
-.project-single-header {
-  .tech {
-    technologies {
-      padding: 0 10px;
-      justify-content: flex-start;
-      .tech-item {
-        flex: 0 1 33%;
-        min-height: 80px;
-        .tech-icon {
-          i {
-            &:before {
-              line-height: 1em;
-              font-size: 42px;
-              //margin: 0;
-              //color: $brand-second;
-            }
-          }
-        }
-        .tech-name {
-          //background: $brand-second;
-          //color: #FFF;
-        }
-      }
-    }
+// .project-single-header {
+//   .tech {
+//     technologies {
+//       padding: 0 10px;
+//       justify-content: flex-start;
+//       .tech-item {
+//         flex: 0 1 33%;
+//         min-height: 80px;
+//         .tech-icon {
+//           i {
+//             &:before {
+//               line-height: 1em;
+//               font-size: 42px;
+//               //margin: 0;
+//               //color: $brand-second;
+//             }
+//           }
+//         }
+//         .tech-name {
+//           //background: $brand-second;
+//           //color: #FFF;
+//         }
+//       }
+//     }
 
 
 
-  }
-}
+//   }
+// }
 
 // homepage tech wrap
 // .homepage-tech-icons {

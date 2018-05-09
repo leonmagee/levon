@@ -6,7 +6,7 @@
 
 get_header(); ?>
 
-<div class="hompage-image-wrap">
+<div class="hompage-outer-wrap">
 
 	<div class="homepage-large-text">
 		<?php if ( $main_tagline = get_field( 'main_tagline', 'option' ) ) { ?>

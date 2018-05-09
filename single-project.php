@@ -3,71 +3,74 @@
 require_once( 'lib/class-tech-loop.php' ); ?>
 
 <main role="main">
-    <!-- section -->
-    <section>
 
-		<?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>
+  <?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>
 
-            <!-- article -->
-            <article class="project-single">
+    <article class="project-single">
 
-                <!-- post title -->
-                <h1 class="solid-bg"><?php the_title(); ?></h1>
-                <!-- /post title -->
+        <div class="new-max-width">
 
-                <div class="project-single-header">
-
-                    <div class="project-bio">
-						<?php the_content(); // Dynamic Content ?>
-						<?php
-						if ( $site_url = get_field( 'url' ) ) {
-							echo '<h2><a target="_blank" href="' . $site_url . '">Go to Site</a></h2>';
-                       } else {
-							echo '<h3>This project is currently being developed</h3>';
-						}
-
-						?>
-                    </div>
-
-                    <div class="tech">
-                        <h3>Tech Used</h3>
-                        <div class="tech-inner">
-							<?php $tech = get_field( 'technologies' );
-							if ( $tech ) {
-								tech_loop::output_icons( $tech );
-							}
-							?>
-                        </div>
-                    </div>
+            <div class="project-header">
+                <h1><?php the_title(); ?></h1>
+                <div class="tech-wrap">
+                    <?php $tech = get_field( 'technologies' );
+                    if ( $tech ) {
+                        tech_loop::output_icons( $tech );
+                    }
+                    ?>
                 </div>
-				<?php if ( $gallery = get_field( 'gallery' ) ) { ?>
-                    <div class="project-gallery">
-						<?php foreach ( $gallery as $image ) { ?>
-                            <div class="gallery-image">
-                                <a rel="lightbox" href="<?php echo $image['url']; ?>">
-                                    <img src="<?php echo $image['sizes']['medium']; ?>"/>
-                                </a>
-                            </div>
-						<?php } ?>
-                    </div>
-				<?php } ?>
-            </article>
-            <!-- /article -->
-		<?php endwhile; ?>
-		<?php else: ?>
+            </div>
 
-            <!-- article -->
-            <article>
+            <div class="project-single-content">
 
-                <h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
+                <div class="project-bio">
 
-            </article>
-            <!-- /article -->
+                  <?php the_content(); ?>
 
-		<?php endif; ?>
+                  <div class="visit-link-wrap">
 
-    </section>
-    <!-- /section -->
+                     <?php 
+                     if ( $site_url = get_field( 'url' ) ) {
+                         echo '<h2><a target="_blank" href="' . $site_url . '">Visit Site</a></h2>';
+                     } else {
+                         echo '<h3>This project is currently being developed</h3>';
+                     } 
+                     ?>
+
+                 </div>
+
+             </div>
+
+         </div>
+
+         <?php if ( $gallery = get_field( 'gallery' ) ) { ?>
+
+            <div class="project-gallery">
+
+              <?php foreach ( $gallery as $image ) { ?>
+
+                <div class="gallery-image">
+
+                    <a rel="lightbox" href="<?php echo $image['url']; ?>">
+
+                        <img src="<?php echo $image['sizes']['medium']; ?>"/>
+
+                    </a>
+
+                </div>
+
+                <?php } ?>
+
+            </div>
+
+            <?php } ?>
+
+        </div>
+
+    </article>
+
+<?php endwhile; endif; ?>
+
 </main>
 
-<?php get_footer(); ?>
+<?php get_footer();
