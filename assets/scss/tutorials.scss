@@ -148,31 +148,31 @@ nav.flexbox-menu-example {
   }
 }
 
-.tutorials-outer {
-  background: #455;
-  width: 100%;
-}
+// .tutorials-outer {
+//   background: #455;
+//   width: 100%;
+// }
 
 // tutorials archive
-.tutorials-archive {
-  font-size: 19px;
-  padding: 0 15px;
-  p {
-    margin-top: 10px;
-    margin-left: 5px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #E3E3E3;
-  }
-  h2 {
-    margin-bottom: 0;
-    a {
-      color: $brand-second;
-      &:hover {
-        color: darken( $brand-second, 5% );
-      }
-    }
-  }
-}
+// .tutorials-archive {
+//   font-size: 19px;
+//   padding: 0 15px;
+//   p {
+//     margin-top: 10px;
+//     margin-left: 5px;
+//     padding-bottom: 20px;
+//     border-bottom: 1px solid #E3E3E3;
+//   }
+//   h2 {
+//     margin-bottom: 0;
+//     a {
+//       color: $brand-second;
+//       &:hover {
+//         color: darken( $brand-second, 5% );
+//       }
+//     }
+//   }
+// }
 
 .tutorial-sample-image {
   padding: 15px;

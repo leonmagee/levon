@@ -1,5 +1,5 @@
 .tutorials-archive-outer {
-  background-color: #455;
+  //background-color: #455;
   background-color: darken( $brand-primary, 25%);
   width: 100%;
   padding-top: 30px;
@@ -10,6 +10,7 @@
   @media(min-width: $screen-sm) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   a {
@@ -20,10 +21,13 @@
   .tutorial-homepage-wrap {
     position: relative;
     margin: 15px;
-    border: 3px solid #DDD;
+    border: 1px solid #DDD;
+    border: 1px solid #777;
+    // border: 3px solid #222;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 1px 1px rgba(0,0,0,0.2);
+    //box-shadow: 1px 1px rgba(255,255,255,0.1);
     @media(min-width: $screen-sm) {
       margin: 15px 0 0;
     }
@@ -35,7 +39,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: rgba(0,0,0,0.3);
+      background-color: rgba(0,0,0,0.2);
       &:hover {
         background-color: transparent;
       }
@@ -44,6 +48,7 @@
         padding: 0 10px;
         color: #FFF;
         text-align: center;
+        text-shadow: 1px 1px rgba(0,0,0,0.3);
         @media(min-width: $screen-sm) {
           font-size: 29px;
         }

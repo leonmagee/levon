@@ -989,17 +989,22 @@ technologies {
   flex-wrap: wrap; }
   technologies .tech-item {
     text-align: center;
-    flex: 0 1 20%;
+    flex: 0 1 50%;
     position: relative;
     min-height: 80px; }
     @media (min-width: 640px) {
       technologies .tech-item {
-        min-height: 130px; } }
+        min-height: 130px;
+        flex: 0 1 33.3%; } }
+    @media (min-width: 1024px) {
+      technologies .tech-item {
+        flex: 0 1 20%; } }
     technologies .tech-item .tech-icon i:before {
       line-height: 1em;
       font-size: 37px;
       margin: 0;
-      color: #00487C; }
+      color: #00487C;
+      color: #08B2E3; }
       @media (min-width: 640px) {
         technologies .tech-item .tech-icon i:before {
           font-size: 60px; } }
@@ -1007,7 +1012,7 @@ technologies {
       display: none;
       position: absolute;
       width: 100%;
-      background: #00487C;
+      background: #08B2E3;
       color: #FFF;
       padding: 3px 2px;
       font-size: 10px;
@@ -1027,8 +1032,8 @@ technologies {
       line-height: 1em;
       font-size: 42px; }
 
-.homepage-tech-icons {
-  padding: 30px 0 20px; }
+.tech-icons-wrap {
+  padding: 50px 0; }
 
 .single-tutorial h3 {
   -webkit-margin-before: 0;
@@ -1149,25 +1154,6 @@ nav.flexbox-menu-example {
     .basic-repsponsive-layout .content.with-sidebar .text {
       padding-top: 15px; }
 
-.tutorials-outer {
-  background: #455;
-  width: 100%; }
-
-.tutorials-archive {
-  font-size: 19px;
-  padding: 0 15px; }
-  .tutorials-archive p {
-    margin-top: 10px;
-    margin-left: 5px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #E3E3E3; }
-  .tutorials-archive h2 {
-    margin-bottom: 0; }
-    .tutorials-archive h2 a {
-      color: #00487C; }
-      .tutorials-archive h2 a:hover {
-        color: #003963; }
-
 .tutorial-sample-image {
   padding: 15px;
   text-align: center; }
@@ -1175,7 +1161,6 @@ nav.flexbox-menu-example {
     border: 1px solid #EEE; }
 
 .tutorials-archive-outer {
-  background-color: #455;
   background-color: #045168;
   width: 100%;
   padding-top: 30px; }
@@ -1185,14 +1170,16 @@ nav.flexbox-menu-example {
     @media (min-width: 640px) {
       .tutorials-archive-outer .tutorials-archive-inner {
         display: flex;
-        justify-content: space-between; } }
+        justify-content: space-between;
+        flex-wrap: wrap; } }
     @media (min-width: 640px) {
       .tutorials-archive-outer .tutorials-archive-inner a {
         flex: 0 1 32%; } }
     .tutorials-archive-outer .tutorials-archive-inner .tutorial-homepage-wrap {
       position: relative;
       margin: 15px;
-      border: 3px solid #DDD;
+      border: 1px solid #DDD;
+      border: 1px solid #777;
       border-radius: 15px;
       overflow: hidden;
       box-shadow: 1px 1px rgba(0, 0, 0, 0.2); }
@@ -1207,35 +1194,20 @@ nav.flexbox-menu-example {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgba(0, 0, 0, 0.3); }
+        background-color: rgba(0, 0, 0, 0.2); }
         .tutorials-archive-outer .tutorials-archive-inner .tutorial-homepage-wrap .title-wrap:hover {
           background-color: transparent; }
         .tutorials-archive-outer .tutorials-archive-inner .tutorial-homepage-wrap .title-wrap h2 {
           font-size: 20px;
           padding: 0 10px;
           color: #FFF;
-          text-align: center; }
+          text-align: center;
+          text-shadow: 1px 1px rgba(0, 0, 0, 0.3); }
           @media (min-width: 640px) {
             .tutorials-archive-outer .tutorials-archive-inner .tutorial-homepage-wrap .title-wrap h2 {
               font-size: 29px; } }
 
-.quizian .quizian-input {
-  width: 600px;
-  margin: 10px; }
-  .quizian .quizian-input input {
-    width: 100%;
-    font-size: 16px;
-    padding: 8px 15px; }
-  .quizian .quizian-input select {
-    width: 150px;
-    font-size: 16px;
-    padding: 8px 15px; }
-  .quizian .quizian-input button {
-    font-size: 16px;
-    padding: 8px 15px;
-    background-color: #08B2E3;
-    color: #FFF;
-    border: none;
-    border-radius: 5px; }
-    .quizian .quizian-input button:hover {
-      background-color: #079fca; }
+#about-page {
+  background-color: #045168;
+  color: #FFF;
+  text-shadow: 1px solid rgba(0, 0, 0, 0.1); }
