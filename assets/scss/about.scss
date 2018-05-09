@@ -1,5 +1,6 @@
 #about-page {
-	background-color: darken( $brand-primary, 25%);
+	background-color: $brand-primary-dark;
 	color: #FFF;
 	text-shadow: 1px solid rgba(0,0,0,0.1);
+	padding-top: 30px;
 }

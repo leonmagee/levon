@@ -24,9 +24,10 @@
   margin: 0 auto;
   .project-item-wrap {
     position: relative;
-    min-height: 300px;
+    min-height: 330px;
     background-size: cover;
     background-position: center;
+    border-bottom: 1px solid #DDD;
     @media(min-width: $screen-sm) {
       border-right: 1px solid rgba(0,0,0,0.07);
       border-bottom: 1px solid rgba(0,0,0,0.07);

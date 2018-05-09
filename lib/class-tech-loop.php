@@ -24,7 +24,7 @@ class tech_loop {
 
 						<?php if ( $icon_class = get_field( 'font_icon_class' ) ) {
 							?>
-							<div class="tech-icon"><i class="flaticon <?php echo $icon_class; ?>"></i></div>
+							<div class="tech-icon"><i class="<?php echo $icon_class; ?>"></i></div>
 						<?php } ?>
 
 						<div class="tech-name"><?php the_title(); ?></div>

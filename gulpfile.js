@@ -26,11 +26,12 @@ gulp.task('scss', function () {
         'assets/css/style.css', 
         'assets/css/flaticon.css', 
         'assets/css/fontello.css', 
+        'assets/css/fontawesome-all.css', 
         'assets/scss/import.scss'
         ])
         .pipe(sass({style: 'compressed', errLogToConsole: true}))
         .pipe(concat('main.min.css'))
-        //.pipe(minifycss())
+        .pipe(minifycss())
         .pipe(gulp.dest('assets/css'))
         .pipe(browserSync.stream());
     util.log(util.colors.red('Compiled!'));

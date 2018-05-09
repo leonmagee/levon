@@ -17,7 +17,7 @@ technologies {
       flex: 0 1 33.3%;
     }
     @media(min-width: $screen-md) {
-      flex: 0 1 20%;
+      flex: 0 1 25%;
     }
     .tech-icon {
       i {
@@ -25,11 +25,19 @@ technologies {
           line-height: 1em;
           font-size: 37px;
           margin: 0;
-          color: $brand-second;
           color: $brand-primary;
 
           @media(min-width: $screen-sm) {
             font-size: 60px;
+          }
+        }
+        &.fab {
+          &:before {
+            font-size: 42px;
+
+            @media(min-width: $screen-sm) {
+              font-size: 75px;
+            }
           }
         }
       }

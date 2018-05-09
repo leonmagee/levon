@@ -8,7 +8,6 @@ require_once( 'lib/class-tech-loop.php' );
 get_header(); ?>
 
 <main role="main" id="about-page">
-	Vue icon? <i class="fab fa-vuejs"></i>   <i class="fas fa-users"></i>
 
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
