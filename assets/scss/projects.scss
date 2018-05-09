@@ -95,9 +95,9 @@
         background: $brand-primary;
         color: #FFF;
         text-shadow: 1px 1px rgba(0,0,0,0.1);
-        padding: 5px 15px 6px;
-        border-radius: 4px;
-        font-size: 0.7em;
+        padding: 5px 13px 6px;
+        //border-radius: 4px;
+        font-size: 0.6em;
         &:hover {
           background-color: darken( $brand-primary, 3%);
         }
