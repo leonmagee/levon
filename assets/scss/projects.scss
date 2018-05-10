@@ -133,26 +133,37 @@
     }
   }
   .project-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    //padding: 0 15px 5px;
-    //padding-bottom: 5px;
+
     margin: 0 15px;
     border-bottom: 1px solid darken($brand-primary, 15%);
+    @media(min-width: $screen-md) {
+        display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     h1 {
-      flex: 1 1 25%;
       font-size: 42px;
       text-shadow: 1px 1px rgba(0,0,0,0.1);
       white-space: nowrap;
+      @media(min-width: $screen-md) {
+        flex: 1 1 25%;
+      }
     }
     .tech-wrap {
-      flex: 1 1 75%;
+      @media(min-width: $screen-md) {
+        flex: 1 1 75%;
+      }
 
       technologies {
-         justify-content: flex-end;
+         //justify-content: flex-end;
+         padding-bottom: 35px;
+         @media(min-width: $screen-md) {
+          justify-content: flex-end;
+          padding-bottom: 0;
+         }
         .tech-item {
           min-height: auto;
+          flex: 1 1 15%;
           @media(min-width: $screen-md) {
             flex: 0 1 15%;
           }

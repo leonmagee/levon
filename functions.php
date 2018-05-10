@@ -151,7 +151,7 @@ function main_styles() {
 	// wp_register_style( 'html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all' );
 	// wp_enqueue_style( 'html5blank' ); // Enqueue it!
 
-	wp_register_style( 'main-styles', get_template_directory_uri() . '/assets/css/main.min.css','', '1.1.3' );
+	wp_register_style( 'main-styles', get_template_directory_uri() . '/assets/css/main.min.css','', '1.1.4' );
 	wp_enqueue_style( 'main-styles' ); // Enqueue it!
 	
 	// wp_register_style( 'fontawesome', get_template_directory_uri() . '/assets/icons/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css' );
