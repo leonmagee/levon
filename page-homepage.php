@@ -2,7 +2,6 @@
 /**
  * Template Name: Homepage New
  */
-//require_once( 'lib/class-tech-loop.php' );
 
 get_header(); ?>
 
