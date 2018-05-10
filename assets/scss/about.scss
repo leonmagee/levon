@@ -3,4 +3,52 @@
 	color: #FFF;
 	text-shadow: 1px solid rgba(0,0,0,0.1);
 	padding-top: 30px;
+
+	.about-inner-wrap {
+		@media(min-width: $screen-md) {
+			display: flex;
+			justify-content: space-between;
+		}
+		.about-content {
+			padding-top: 10px;
+			@media(min-width: $screen-md) {
+				flex: 0 1 58%;
+			}
+		}
+		.about-form {
+			background-color: rgba(0,0,0,0.2);
+			padding: 5px 15px;
+			@media(min-width: $screen-md) {
+				flex: 0 1 40%;
+			}
+			h3 {
+				margin: 7px 0 0;
+				text-shadow: 1px 1px rgba(0,0,0,0.1);
+			}
+			input, textarea {
+				border: none;
+				border-radius: 0;
+			}
+
+			.wpforms-confirmation-container-full {
+				background-color: $brand-primary;
+				border-color: lighten( $brand-primary, 5%);
+				color: #FFF;
+				text-shadow: 1px 1px rgba(0,0,0,0.05);
+				margin-top: 10px;
+			}
+		}
+	}
+
+	button.wpforms-submit {
+		background-color: $brand-primary;
+		border: none;
+		color: #FFF;
+		font-weight: 600;
+		font-size: 0.8em;
+		&:hover {
+			background-color: darken( $brand-primary, 7%);
+			transition: 0.2s;
+		}
+	}
 }
