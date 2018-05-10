@@ -34,14 +34,16 @@
       }
     }
     .hover-shade {
+
       position: absolute;
       z-index: 1000;
       width: 100%;
       height: 100%;
       background-color: rgba($brand-primary, .2);
-      display: none;
+      display: flex;
       align-items: center;
       justify-content: center;
+      opacity: 0;
 
       .project-item-circle {
         width: 180px;
@@ -56,11 +58,14 @@
         font-weight: 600;
         border: 2px solid #FFF;
       }
+
+
     }
     &:hover {
       opacity: 0.9;
       .hover-shade {
-        display: flex;
+        //display: flex;
+        opacity: 1;
       }
     }
     a {
