@@ -7,9 +7,9 @@ var gulp = require('gulp');
  *  Load Gulp Dependencies
  */
 var sass = require('gulp-sass');
-var minifycss = require('gulp-minify-css');
+var minifycss = require('gulp-clean-css');
 var rename = require('gulp-rename');
-var util = require('gulp-util');
+var log = require('fancy-log');
 var concat = require('gulp-concat');
 var browserSync = require('browser-sync').create();
 
@@ -19,6 +19,8 @@ var browserSync = require('browser-sync').create();
  *  I need to figure out how to get live reload working... this is such a PITA...
  *  I can either switch to browser sync or else try the new method outlined in the video...
  */
+
+//gulp.task('default', 'scss');
 
 gulp.task('scss', function () {
     gulp.src([
@@ -34,49 +36,50 @@ gulp.task('scss', function () {
         .pipe(minifycss())
         .pipe(gulp.dest('assets/css'))
         .pipe(browserSync.stream());
-    util.log(util.colors.red('Compiled!'));
+    log('Compiled!');
 });
 
-gulp.task('default', ['scss', 'watch', 'browser-sync']);
+// gulp.task('browser-sync', function() {
+//     browserSync.init({
+//         proxy: "https://levon.test", // this proxys my dev site to localhost:3000
+//         open: false,
+//         port: 9999,
+//         https: {
+//             key: "/Users/leonmagee/.localhost-ssl/key.pem",
+//             cert: "/Users/leonmagee/.localhost-ssl/cert.pem"
+//         }
+//     });
+// });
 
+// gulp.task('watch', function () {
 
-gulp.task('browser-sync', function() {
-    browserSync.init({
-        proxy: "https://www.levon.dev", // this proxys my dev site to localhost:3000
-        open: false,
-        port: 9999,
-        https: {
-            key: "/Users/leonmagee/.localhost-ssl/key.pem",
-            cert: "/Users/leonmagee/.localhost-ssl/cert.pem"
-        }
-    });
-});
+//     /**
+//      *  Watch PHP files for changes
+//      */
+//     var php = '**/*.php';
 
-gulp.task('watch', function () {
+//     gulp.watch(php).on('change', function (file) {
 
-    /**
-     *  Watch PHP files for changes
-     */
-    var php = '**/*.php';
+//         gulp.src(php).pipe(browserSync.stream());
 
-    gulp.watch(php).on('change', function (file) {
+//         log('[ ' + file.path + ' ]');
+//     });
 
-        gulp.src(php).pipe(browserSync.stream());
+//     var js = 'assets/js/**/*.js';
 
-        util.log(util.colors.blue('[ ' + file.path + ' ]'));
-    });
+//     gulp.watch(js).on('change', function (file) {
 
-    var js = 'assets/js/**/*.js';
+//         gulp.src(js).pipe(browserSync.stream());
 
-    gulp.watch(js).on('change', function (file) {
+//         log('[ ' + file.path + ' ]');
+//     });
 
-        gulp.src(js).pipe(browserSync.stream());
+//     /**
+//      *  Watch SCSS files for changes - trigger 'scss' task
+//      */
+//     gulp.watch('assets/scss/**/*.scss', ['scss']);
+// });
 
-        util.log(util.colors.blue('[ ' + file.path + ' ]'));
-    });
+//gulp.task('default', ['scss', 'watch', 'browser-sync']);
+gulp.task('default', ['scss']);
 
-    /**
-     *  Watch SCSS files for changes - trigger 'scss' task
-     */
-    gulp.watch('assets/scss/**/*.scss', ['scss']);
-});

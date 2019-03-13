@@ -1,5 +1,7 @@
 .hompage-outer-wrap { //@todo change this name?
-  background-color: $brand-primary-dark;
+  //background-color: $brand-primary-dark;
+  //background-color: tomato;
+  background-image: linear-gradient(to bottom right, #02AAB0, #00CDAC);
   //background-image: url('../img/city.jpg');
   background-size: cover;
   flex: 1;
