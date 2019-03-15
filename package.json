@@ -13,7 +13,11 @@
   "author": "Leon Magee",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babelify": "^10.0.0",
     "browser-sync": "^2.26.3",
+    "browserify-shim": "^3.8.14",
     "fancy-log": "^1.3.3",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
@@ -25,7 +29,12 @@
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
     "jcarousel": "^0.3.8",
-    "jshint": "^2.10.1"
+    "jshint": "^2.10.2"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "babel": {
+    "presets": [
+      "@babel/presets-env"
+    ]
+  }
 }

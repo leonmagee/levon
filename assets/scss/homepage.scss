@@ -1,7 +1,11 @@
 .hompage-outer-wrap { //@todo change this name?
-  //background-color: $brand-primary-dark;
+  background-color: $brand-primary-dark;
   //background-color: tomato;
-  background-image: linear-gradient(to bottom right, #02AAB0, #00CDAC);
+  //background-color: darkturquoise;
+  background-color: $brand-primary;
+
+  //background-image: linear-gradient(to bottom right, #02AAB0, #00CDAC);
+  background-image: $background-gradient;
   //background-image: url('../img/city.jpg');
   background-size: cover;
   flex: 1;
@@ -15,7 +19,7 @@
   .homepage-large-text {
     text-align: center;
     padding: 10px 10px;
-    text-shadow: 1px 1px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px rgba(0,0,0,0.1);
     h1 {
       font-size: 3em;
       line-height: 1.3em;
