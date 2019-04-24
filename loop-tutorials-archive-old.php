@@ -15,9 +15,9 @@
                             <div class="title-wrap">
                                 <h2><?php the_title(); ?></h2>
                             </div>
-                            <?php if ( has_post_thumbnail() ) {
-                                the_post_thumbnail();
-                            } ?>
+                            <div class="tutorial-excerpt">
+                              <?php the_excerpt(); ?>
+                            </div>
                         </div>
                     </a>
 

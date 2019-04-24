@@ -1,28 +1,23 @@
 const beer = {
-    name: 'Modern Times',
-    area: 'Point Loma'
+  name: 'Modern Times',
+  area: 'Point Loma',
 };
 
-let { name, area } = beer;
+const { name, area } = beer;
 
-function do_something({name ='Modern Times', area ='Point Loma'}) {
-    console.log();
+function do_something({ name = 'Modern Times', area = 'Point Loma' }) {
+  console.log();
 }
 
 do_something(beer);
-
-
-
-
 
 // beer.name = 'Mike Hess';
 //
 // console.log(beer);
 
-    //
-    // const beer = 'ballast point';
-    // beer = 'stone';
-
+//
+// const beer = 'ballast point';
+// beer = 'stone';
 
 //
 //
@@ -50,14 +45,15 @@ do_something(beer);
 // //console.log(beers);
 //
 //
-document.querySelector('.site-title').addEventListener('click', (click_element) => console.log( click_element)
-);
+document
+  .querySelector('.site-title')
+  .addEventListener('click', click_element => console.log(click_element));
 
 function normal_function() {
-    console.log( 'normal function called' );
+  console.log('normal function called');
 }
 
-//normal_function();
+// normal_function();
 
 //
 //

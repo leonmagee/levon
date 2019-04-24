@@ -36,5 +36,8 @@
     "presets": [
       "@babel/presets-env"
     ]
+  },
+  "browserfiy": {
+    "transform": []
   }
 }

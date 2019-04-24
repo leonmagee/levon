@@ -153,7 +153,7 @@ function main_styles() {
 
 	wp_register_style( 'main-styles', get_template_directory_uri() . '/assets/css/main.min.css','', '1.1.7' );
 	wp_enqueue_style( 'main-styles' ); // Enqueue it!
-	
+
 	// wp_register_style( 'fontawesome', get_template_directory_uri() . '/assets/icons/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css' );
 	// wp_enqueue_style( 'fontawesome' ); // Enqueue it!
 
