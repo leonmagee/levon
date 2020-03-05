@@ -24,10 +24,10 @@ function js() {
 function css() {
     return src([
         'assets/css/normalize.css',
-        'assets/css/style.css', 
-        'assets/css/flaticon.css', 
-        'assets/css/fontello.css', 
-        'assets/css/fontawesome-all.css', 
+        'assets/css/style.css',
+        'assets/css/flaticon.css',
+        'assets/css/fontello.css',
+        'assets/css/fontawesome-all.css',
         'assets/scss/import.scss'
         ])
         .pipe(sass({style: 'compressed', errLogToConsole: true}))
@@ -46,8 +46,8 @@ function callBrowserSync() {
         open: false,
         port: 9999,
         https: {
-            key: "/Users/leonmagee/.localhost-ssl/localhost.key",
-            cert: "/Users/leonmagee/.localhost-ssl/localhost.crt"
+          key: '/Users/cci/local_ssl/localhost.key',
+          cert: '/Users/cci/local_ssl/localhost.crt'
         }
     });
 }
@@ -69,10 +69,10 @@ task('default', build);
 // function scss() {
 //     gulp.src([
 //         'assets/css/normalize.css',
-//         'assets/css/style.css', 
-//         'assets/css/flaticon.css', 
-//         'assets/css/fontello.css', 
-//         'assets/css/fontawesome-all.css', 
+//         'assets/css/style.css',
+//         'assets/css/flaticon.css',
+//         'assets/css/fontello.css',
+//         'assets/css/fontawesome-all.css',
 //         'assets/scss/import.scss'
 //         ])
 //         .pipe(sass({style: 'compressed', errLogToConsole: true}))

@@ -1,0 +1,28 @@
+.wrap-404 {
+  background-color: #222;
+  background-image: url("https://res.cloudinary.com/dabvi4jmx/image/upload/v1583435436/levon/space.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  h1 {
+    font-size: 30em;
+    color: #fafafa;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    margin: 0;
+  }
+  h2 {
+    font-size: 2.7em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    a {
+      color: #fafafa;
+      &:hover {
+        color: $brand-primary;
+      }
+    }
+  }
+}
