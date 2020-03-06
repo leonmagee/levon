@@ -1,12 +1,12 @@
 // project archive
 .projects-wrap {
-  background-color: #DDD;
+  background-color: #ddd;
   min-height: 100%;
-  @media(min-width: $screen-sm) {
+  @media (min-width: $screen-sm) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  @media(min-width: $screen-md) {
+  @media (min-width: $screen-md) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
@@ -18,10 +18,12 @@
     min-height: 330px;
     background-size: cover;
     background-position: center;
-    border-bottom: 1px solid #DDD;
-    @media(min-width: $screen-sm) {
-      border-right: 1px solid rgba(0,0,0,0.07);
-      border-bottom: 1px solid rgba(0,0,0,0.07);
+    border-bottom: 1px solid #ddd;
+    @media (min-width: $screen-sm) {
+      //border-right: 1px solid rgba(0, 0, 0, 0.07);
+      //border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+      border-right: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
     }
     .project-title {
       h2 {
@@ -33,13 +35,26 @@
         padding: 4px 0;
       }
     }
+    .project-title-new {
+      width: 100%;
+      background-color: #fafafa;
+      color: $brand-primary-dark;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.2em;
+      text-align: center;
+      padding: 10px 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
     .hover-shade {
-
       position: absolute;
       z-index: 1000;
       width: 100%;
       height: 100%;
-      background-color: rgba($brand-primary, .2);
+      background-color: rgba($brand-primary, 0.2);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -52,14 +67,12 @@
         justify-content: center;
         align-items: center;
         background-color: $brand-primary;
-        color: #FFF;
+        color: #fff;
         font-size: 24px;
         border-radius: 50%;
         font-weight: 600;
-        border: 2px solid #FFF;
+        border: 2px solid #fff;
       }
-
-
     }
     &:hover {
       opacity: 0.9;
@@ -76,11 +89,10 @@
   }
 }
 
-
 // single project
 .project-single {
   background: $brand-primary-dark;
-  color: #FFF;
+  color: #fff;
   padding-top: 23px;
   height: 100%;
 
@@ -92,26 +104,25 @@
     .project-bio {
       font-size: 17px;
       padding: 0 15px;
-      text-shadow: 1px 1px rgba(0,0,0,0.1);
+      text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
     }
 
     .visit-link-wrap {
       a {
         background: $brand-primary;
-        color: #FFF;
-        text-shadow: 1px 1px rgba(0,0,0,0.1);
+        color: #fff;
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
         padding: 5px 13px 6px;
         //border-radius: 4px;
         font-size: 0.6em;
         &:hover {
-          background-color: darken( $brand-primary, 3%);
+          background-color: darken($brand-primary, 3%);
         }
       }
     }
-
   }
   .project-gallery {
-    @media(min-width: $screen-sm) {
+    @media (min-width: $screen-sm) {
       display: flex;
       padding: 10px 15px;
       flex-wrap: wrap;
@@ -119,14 +130,14 @@
     }
     .gallery-image {
       padding: 30px;
-      @media(min-width: $screen-sm) {
+      @media (min-width: $screen-sm) {
         flex: 0 1 32%;
         padding: 0;
         margin-bottom: 28px;
       }
       a {
         img {
-          box-shadow: 2px 2px rgba(0,0,0,0.2);
+          box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
         }
         &:hover {
           opacity: 0.85;
@@ -138,38 +149,37 @@
     }
   }
   .project-header {
-
     margin: 0 15px;
     border-bottom: 1px solid darken($brand-primary, 15%);
-    @media(min-width: $screen-md) {
-        display: flex;
+    @media (min-width: $screen-md) {
+      display: flex;
       justify-content: space-between;
       align-items: center;
     }
     h1 {
       font-size: 42px;
-      text-shadow: 1px 1px rgba(0,0,0,0.1);
+      text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
       white-space: nowrap;
-      @media(min-width: $screen-md) {
+      @media (min-width: $screen-md) {
         flex: 1 1 25%;
       }
     }
     .tech-wrap {
-      @media(min-width: $screen-md) {
+      @media (min-width: $screen-md) {
         flex: 1 1 75%;
       }
 
       technologies {
-         //justify-content: flex-end;
-         padding-bottom: 35px;
-         @media(min-width: $screen-md) {
+        //justify-content: flex-end;
+        padding-bottom: 35px;
+        @media (min-width: $screen-md) {
           justify-content: flex-end;
           padding-bottom: 0;
-         }
+        }
         .tech-item {
           min-height: auto;
           flex: 1 1 15%;
-          @media(min-width: $screen-md) {
+          @media (min-width: $screen-md) {
             flex: 0 1 15%;
           }
           .tech-icon {
@@ -177,7 +187,7 @@
               &:before {
                 font-size: 30px;
 
-                @media(min-width: $screen-sm) {
+                @media (min-width: $screen-sm) {
                   font-size: 42px;
                 }
               }
@@ -185,7 +195,7 @@
                 &:before {
                   font-size: 33px;
 
-                  @media(min-width: $screen-sm) {
+                  @media (min-width: $screen-sm) {
                     font-size: 55px;
                   }
                 }
@@ -194,8 +204,6 @@
           }
         }
       }
-
     }
-
   }
 }
