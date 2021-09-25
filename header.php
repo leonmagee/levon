@@ -39,8 +39,8 @@
 			<!-- nav -->
 			<nav class="nav" role="navigation">
 				<?php //html5blank_nav(); //doesn't work anymore ?>
-				<?php wp_nav_menu();?>
-			</nav>
+				<?php wp_nav_menu(['menu' => 1]);?>
+			</na1>
 			<!-- /nav -->
 
 		</div>
